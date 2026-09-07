@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef>
+    <defName>CT_Shuttle_BHLite_HygieneModule</defName>
+    <label>shuttle lite hygiene station</label>
+    <description>Provides lightweight Bad Hygiene Lite hygiene and bladder service for shuttle occupants without water tanks, pipes, sewage, or thirst handling.</description>
+    <constructionCostList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </constructionCostList>
+    <constructionWorkTicks>2600</constructionWorkTicks>
+    <moduleTypeID>habitat</moduleTypeID>
+    <playerInstallable>false</playerInstallable>
+    <mass>30</mass>
+    <idlePowerDrawWatts>0</idlePowerDrawWatts>
+    <moduleComplexityCost>1</moduleComplexityCost>
+    <installableSegmentTypes>
+      <li>living</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>habitat</li>
+    </installableModuleSlotTypes>
+    <habitatSleepSlots>0</habitatSleepSlots>
+    <habitatDiningSlots>0</habitatDiningSlots>
+    <habitatSupportsSleep>false</habitatSupportsSleep>
+    <habitatSupportsDining>false</habitatSupportsDining>
+    <allowCargoFoodWithdrawal>false</allowCargoFoodWithdrawal>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef>
+</Defs>

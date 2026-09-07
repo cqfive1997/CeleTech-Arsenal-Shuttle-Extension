@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F29A3B8-F19E-47D6-9B7E-68DA8837C716}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CeleTech.ShuttleExtension.Integrations</RootNamespace>
+    <AssemblyName>CeleTech_Shuttle_Integrations</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CeleTech_Shuttle">
+      <HintPath>..\..\Assemblies\CeleTech_Shuttle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Core\AdditionalModuleBootstrap.cs" />
+    <Compile Include="Core\AdditionalModuleIdentity.cs" />
+    <Compile Include="Core\AdditionalModuleLog.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\CT_Shuttle_BHLiteIntegrationDef.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\BHLiteIntegrationResolver.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\BHLiteCompatibility.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\BHLiteReflectionBridge.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\BHLiteModuleRuntime.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\BHLiteModuleRuntimeFactory.cs" />
+    <Compile Include="Compatibility\BadHygieneLite\BHLiteModuleUIDrawer.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\CT_Shuttle_DBHIntegrationDef.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHIntegrationResolver.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHCompatibility.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHReflectionBridge.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHRuntimePerformanceMetrics.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHPipeBridge.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHPipeCheckCommandHandler.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHLiquidUtility.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHTankCapacityCommandHandler.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHModuleRuntime.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHOccupantServicePolicy.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHModuleRuntimeFactory.cs" />
+    <Compile Include="Compatibility\DubsBadHygiene\DBHModuleUIDrawer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

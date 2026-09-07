@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_ShortVideo</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_ShortVideo</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_MicroDrama</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_MicroDrama</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_DramaVariety</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_DramaVariety</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_DanmakuVideo</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_DanmakuVideo</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_LiveStream</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_LiveStream</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_MobileGame</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_MobileGame</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_ChessCards</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_ChessCards</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_Karaoke</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_Karaoke</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_Music</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_Music</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_WebNovel</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_WebNovel</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_TeaChat</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_TeaChat</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Job_ShuttleJoy_DanceFitness</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatJoy</driverClass>
+    <reportString>using the shuttle recreation module.</reportString>
+    <joyKind>CT_Joy_DanceFitness</joyKind>
+    <joyGainRate>1</joyGainRate>
+    <joyDuration>4000</joyDuration>
+  </JobDef>
+</Defs>

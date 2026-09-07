@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>CT_Shuttle_EnterMedicalBay</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.MedicalBay.JobDriver_EnterMedicalBay</driverClass>
+    <reportString>CT_Shuttle_MedicalBay_EnterJobLabel</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Shuttle_CarryPatientToMedicalBay</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.MedicalBay.JobDriver_CarryPatientToMedicalBay</driverClass>
+    <reportString>CT_Shuttle_MedicalBay_CarryPatientJobLabel</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Shuttle_TendMedicalBayPatient</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.MedicalBay.JobDriver_TendMedicalBayPatient</driverClass>
+    <reportString>CT_Shuttle_MedicalBay_TendPatientJobLabel</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Shuttle_TendMedicalBayPatientWithMedicine</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.MedicalBay.JobDriver_TendMedicalBayPatient</driverClass>
+    <reportString>CT_Shuttle_MedicalBay_TendPatientWithMedicineJobLabel</reportString>
+  </JobDef>
+</Defs>

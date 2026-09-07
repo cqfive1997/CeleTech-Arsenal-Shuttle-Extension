@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CT_ShuttleAmmo_6mmAP</defName>
+    <label>6mm shuttle AP round</label>
+    <description>A compact armor-piercing shuttle round for the 6mm point-defense module.</description>
+    <thingCategories>
+      <li>CT_ShuttleWeaponAmmo</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Weapon/6mm shuttle AP round</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.15</MarketValue>
+      <Mass>0.006</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
+    </statBases>
+    <stackLimit>500</stackLimit>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>CT_ShuttleAmmo_40mmAPHE</defName>
+    <label>40mm shuttle APHE shell</label>
+    <description>A compact armor-piercing high-explosive shell for the 40mm shuttle CIWS module.</description>
+    <thingCategories>
+      <li>CT_ShuttleWeaponAmmo</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Weapon/40mm shuttle HE shell</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>24</MarketValue>
+      <Mass>0.90</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <stackLimit>120</stackLimit>
+  </ThingDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoDef>
+    <defName>CT_ShuttleAmmo_6mmAP</defName>
+    <label>6mm AP</label>
+    <description>A compact armor-piercing shuttle round for the 6mm point-defense module.</description>
+    <ammoCategory>kinetic_point_defense</ammoCategory>
+    <massKg>0.006</massKg>
+    <marketValue>0.15</marketValue>
+    <damageMultiplier>1.0</damageMultiplier>
+    <armorPenetrationMultiplier>1.15</armorPenetrationMultiplier>
+    <shieldDamageMultiplier>0.75</shieldDamageMultiplier>
+    <projectileDefName>CT_Shuttle_Projectile_6mmPD</projectileDefName>
+    <playerCraftable>true</playerCraftable>
+    <workAmount>120</workAmount>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoDef>
+    <defName>CT_ShuttleAmmo_40mmAPHE</defName>
+    <label>40mm APHE</label>
+    <description>A compact armor-piercing high-explosive shell for the 40mm shuttle CIWS module.</description>
+    <ammoCategory>explosive_ciws</ammoCategory>
+    <massKg>0.90</massKg>
+    <marketValue>24</marketValue>
+    <damageMultiplier>1.35</damageMultiplier>
+    <armorPenetrationMultiplier>1.05</armorPenetrationMultiplier>
+    <explosionRadius>1.2</explosionRadius>
+    <shieldDamageMultiplier>1.0</shieldDamageMultiplier>
+    <projectileDefName>CT_Shuttle_Projectile_40mmCIWS</projectileDefName>
+    <playerCraftable>true</playerCraftable>
+    <workAmount>520</workAmount>
+    <costList>
+      <Steel>2</Steel>
+      <Chemfuel>1</Chemfuel>
+    </costList>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoSetDef>
+    <defName>CT_ShuttleAmmoSet_PointDefense</defName>
+    <label>point-defense shuttle ammo set</label>
+    <ammoDefs>
+      <li>CT_ShuttleAmmo_6mmAP</li>
+    </ammoDefs>
+    <defaultAmmo>CT_ShuttleAmmo_6mmAP</defaultAmmo>
+    <allowAmmoSwitching>true</allowAmmoSwitching>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoSetDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoSetDef>
+    <defName>CT_ShuttleAmmoSet_40mmCIWS</defName>
+    <label>40mm CIWS shuttle ammo set</label>
+    <ammoDefs>
+      <li>CT_ShuttleAmmo_40mmAPHE</li>
+    </ammoDefs>
+    <defaultAmmo>CT_ShuttleAmmo_40mmAPHE</defaultAmmo>
+    <allowAmmoSwitching>true</allowAmmoSwitching>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponAmmoSetDef>
+
+  <RecipeDef>
+    <defName>CT_Make_ShuttleAmmo_6mmAP</defName>
+    <label>make 6mm shuttle AP rounds</label>
+    <jobString>Making 6mm shuttle AP rounds.</jobString>
+    <workAmount>900</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>24</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <CT_ShuttleAmmo_6mmAP>1000</CT_ShuttleAmmo_6mmAP>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>CT_Make_ShuttleAmmo_40mmAPHE</defName>
+    <label>make 40mm shuttle APHE shells</label>
+    <jobString>Making 40mm shuttle APHE shells.</jobString>
+    <workAmount>1800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>28</count>
+      </li>
+    </ingredients>
+    <products>
+      <CT_ShuttleAmmo_40mmAPHE>280</CT_ShuttleAmmo_40mmAPHE>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

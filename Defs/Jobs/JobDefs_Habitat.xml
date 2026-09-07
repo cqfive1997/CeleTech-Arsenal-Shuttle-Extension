@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>CT_Shuttle_HabitatRest</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatRest</driverClass>
+    <reportString>CT_Shuttle_ReportHabitatRest</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>CT_Shuttle_HabitatIngest</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JobDriver_HabitatIngest</driverClass>
+    <reportString>CT_Shuttle_ReportHabitatIngest</reportString>
+  </JobDef>
+</Defs>

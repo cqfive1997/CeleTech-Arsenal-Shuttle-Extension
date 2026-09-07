@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JoyKindDef>
+    <defName>CT_Joy_ShortVideo</defName>
+    <label>short video browsing</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_MicroDrama</defName>
+    <label>micro drama watching</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_DramaVariety</defName>
+    <label>drama and variety watching</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_DanmakuVideo</defName>
+    <label>commentary video watching</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_LiveStream</defName>
+    <label>live stream watching</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_MobileGame</defName>
+    <label>mobile gaming</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_ChessCards</defName>
+    <label>chess and cards</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_Karaoke</defName>
+    <label>karaoke</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_Music</defName>
+    <label>music listening</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_WebNovel</defName>
+    <label>web novel and audiobook</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_TeaChat</defName>
+    <label>tea and chat</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+
+  <JoyKindDef>
+    <defName>CT_Joy_DanceFitness</defName>
+    <label>dance fitness</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+</Defs>

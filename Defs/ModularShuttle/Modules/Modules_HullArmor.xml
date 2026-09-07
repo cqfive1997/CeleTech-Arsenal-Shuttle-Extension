@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHullPlatingModuleDef>
+    <defName>CT_Shuttle_HullPlatingModule</defName>
+    <label>hull plating module</label>
+    <description>Reinforces the shuttle hull with a selected metallic material. The material affects hull hit points and damage resistance.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_HullPlating</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </constructionCostList>
+    <stuffCostCount>250</stuffCostCount>
+    <constructionWorkTicks>9000</constructionWorkTicks>
+    <moduleTypeID>armor</moduleTypeID>
+    <mass>450</mass>
+    <installableSegmentTypes>
+      <li>weapon</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>armor</li>
+    </installableModuleSlotTypes>
+    <hullHitPointsBonus>10000</hullHitPointsBonus>
+    <sharpDamageMultiplier>0.85</sharpDamageMultiplier>
+    <bluntDamageMultiplier>0.85</bluntDamageMultiplier>
+    <heatDamageMultiplier>0.90</heatDamageMultiplier>
+    <explosionDamageMultiplier>0.75</explosionDamageMultiplier>
+    <empDamageMultiplier>1.15</empDamageMultiplier>
+    <flatDamageReduction>20</flatDamageReduction>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHullPlatingModuleDef>
+</Defs>

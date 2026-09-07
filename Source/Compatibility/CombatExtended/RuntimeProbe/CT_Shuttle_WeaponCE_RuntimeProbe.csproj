@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B753576B-E407-4946-BDF8-8AB5388FB0C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CeleTech.ShuttleExtension.Compatibility.CombatExtended.RuntimeProbe</RootNamespace>
+    <AssemblyName>CT_Shuttle_WeaponCE_RuntimeProbe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <RimWorldDir Condition=" '$(RimWorldDir)' == '' ">$(MSBuildProjectDirectory)\..\..\..\..\..\..</RimWorldDir>
+    <SteamAppsDir Condition=" '$(SteamAppsDir)' == '' ">$(RimWorldDir)\..\..</SteamAppsDir>
+    <CombatExtendedDir Condition=" '$(CombatExtendedDir)' == '' ">$(SteamAppsDir)\workshop\content\294100\2890901044</CombatExtendedDir>
+    <ShuttleModDir Condition=" '$(ShuttleModDir)' == '' ">$(MSBuildProjectDirectory)\..\..\..\..</ShuttleModDir>
+    <DeployRuntimeProbe Condition=" '$(DeployRuntimeProbe)' == '' ">false</DeployRuntimeProbe>
+    <RuntimeProbeDeployDir>$(ShuttleModDir)\1.6\CombatExtended\Assemblies</RuntimeProbeDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CombatExtended">
+      <HintPath>$(CombatExtendedDir)\Assemblies\CombatExtended.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CeleTech_Shuttle">
+      <HintPath>$(ShuttleModDir)\Assemblies\CeleTech_Shuttle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CeRuntimeProbeCandidateResolver.cs" />
+    <Compile Include="CeRuntimeProbeCargoMagazineMutation.cs" />
+    <Compile Include="CeRuntimeProbeCargoReloadAdapter.cs" />
+    <Compile Include="CeRuntimeProbeAmmoOwner.cs" />
+    <Compile Include="CeRuntimeProbeDebugActions.cs" />
+    <Compile Include="CeRuntimeProbeGameComponent.cs" />
+    <Compile Include="CeRuntimeProbeGunAccess.cs" />
+    <Compile Include="CeRuntimeProbeGunFactory.cs" />
+    <Compile Include="CeRuntimeProbeInstalledAmmoDebugActions.cs" />
+    <Compile Include="CeRuntimeProbeMagazineCommitter.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleDebugActions.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleLineTrace.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleObservation.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleReportWriter.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleSession.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleSessionRunner.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleSource.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleSourceSelector.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleVerb.cs" />
+    <Compile Include="CeRuntimeProbeMuzzleVerbInstaller.cs" />
+    <Compile Include="CeRuntimeProbeResolvedMuzzleAdapter.cs" />
+    <Compile Include="CeRuntimeProbeResolvedMuzzleDebugActions.cs" />
+    <Compile Include="CeRuntimeProbeReloadDebugActions.cs" />
+    <Compile Include="CeRuntimeProbeReloadOperation.cs" />
+    <Compile Include="CeRuntimeProbeReloadReportWriter.cs" />
+    <Compile Include="CeRuntimeProbeReloadSession.cs" />
+    <Compile Include="CeRuntimeProbeReloadSessionRunner.cs" />
+    <Compile Include="CeRuntimeProbeReloadSnapshot.cs" />
+    <Compile Include="CeRuntimeProbeReloadStaging.cs" />
+    <Compile Include="CeRuntimeProbeReportWriter.cs" />
+    <Compile Include="CeRuntimeProbeSession.cs" />
+    <Compile Include="CeRuntimeProbeSessionRunner.cs" />
+    <Compile Include="CeRuntimeProbeStateSnapshot.cs" />
+  </ItemGroup>
+  <Target Name="ValidateProbeReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll')" Text="RimWorldDir does not point to a RimWorld installation: $(RimWorldDir)" />
+    <Error Condition="!Exists('$(CombatExtendedDir)\Assemblies\CombatExtended.dll')" Text="CombatExtendedDir does not point to an installed Combat Extended build: $(CombatExtendedDir)" />
+  </Target>
+  <Target Name="DeployRuntimeProbe" AfterTargets="Build" Condition=" '$(DeployRuntimeProbe)' == 'true' ">
+    <MakeDir Directories="$(RuntimeProbeDeployDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(RuntimeProbeDeployDir)" />
+  </Target>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

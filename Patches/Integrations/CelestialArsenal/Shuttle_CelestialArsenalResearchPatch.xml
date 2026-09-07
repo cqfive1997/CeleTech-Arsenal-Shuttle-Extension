@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod" MayRequire="TOT.CeleTech.MKIII">
+    <mods>
+      <li>CeleTech Arsenal MKIII</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[starts-with(defName, 'CT_Shuttle_')]/tab</xpath>
+          <value>
+            <tab>CMC_Research</tab>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ModularAirframe"]/researchViewX</xpath>
+          <value><researchViewX>12</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ModularAirframe"]/researchViewY</xpath>
+          <value><researchViewY>2.8</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_CargoBayEngineering"]/researchViewX</xpath>
+          <value><researchViewX>13</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_CargoBayEngineering"]/researchViewY</xpath>
+          <value><researchViewY>0.7</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ColdChainCargo"]/researchViewX</xpath>
+          <value><researchViewX>14</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ColdChainCargo"]/researchViewY</xpath>
+          <value><researchViewY>0.7</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_HabitatSupport"]/researchViewX</xpath>
+          <value><researchViewX>15</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_HabitatSupport"]/researchViewY</xpath>
+          <value><researchViewY>0.7</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_Research_DBH_HygieneSuite"]/researchViewX</xpath>
+          <value><researchViewX>16</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_Research_DBH_HygieneSuite"]/researchViewY</xpath>
+          <value><researchViewY>0</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MedicalEvacuationBay"]/researchViewX</xpath>
+          <value><researchViewX>16</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MedicalEvacuationBay"]/researchViewY</xpath>
+          <value><researchViewY>0.7</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_PrisonerContainment"]/researchViewX</xpath>
+          <value><researchViewX>16</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_PrisonerContainment"]/researchViewY</xpath>
+          <value><researchViewY>1.4</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MechLogisticsInterface"]/researchViewX</xpath>
+          <value><researchViewX>15</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MechLogisticsInterface"]/researchViewY</xpath>
+          <value><researchViewY>2.1</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FlightControlMatrix"]/researchViewX</xpath>
+          <value><researchViewX>13</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FlightControlMatrix"]/researchViewY</xpath>
+          <value><researchViewY>3.5</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_LandingStabilization"]/researchViewX</xpath>
+          <value><researchViewX>14</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_LandingStabilization"]/researchViewY</xpath>
+          <value><researchViewY>3.5</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_HullPlating"]/researchViewX</xpath>
+          <value><researchViewX>13</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_HullPlating"]/researchViewY</xpath>
+          <value><researchViewY>4.2</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_SurfaceShieldMatrix"]/researchViewX</xpath>
+          <value><researchViewX>14</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_SurfaceShieldMatrix"]/researchViewY</xpath>
+          <value><researchViewY>4.2</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_WeaponBayIntegration"]/researchViewX</xpath>
+          <value><researchViewX>16</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_WeaponBayIntegration"]/researchViewY</xpath>
+          <value><researchViewY>2.8</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FireControlRadarNetwork"]/researchViewX</xpath>
+          <value><researchViewX>17</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FireControlRadarNetwork"]/researchViewY</xpath>
+          <value><researchViewY>2.8</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_AutomaticAmmoLoading"]/researchViewX</xpath>
+          <value><researchViewX>16</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_AutomaticAmmoLoading"]/researchViewY</xpath>
+          <value><researchViewY>2.1</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_InternalPowerBus"]/researchViewX</xpath>
+          <value><researchViewX>13</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_InternalPowerBus"]/researchViewY</xpath>
+          <value><researchViewY>2.8</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FusionPowerBus"]/researchViewX</xpath>
+          <value><researchViewX>14</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FusionPowerBus"]/researchViewY</xpath>
+          <value><researchViewY>2.8</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ZeroPointPower"]/researchViewX</xpath>
+          <value><researchViewX>15</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ZeroPointPower"]/researchViewY</xpath>
+          <value><researchViewY>2.8</researchViewY></value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MobileFabricationBay"]/researchViewX</xpath>
+          <value><researchViewX>13</researchViewX></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MobileFabricationBay"]/researchViewY</xpath>
+          <value><researchViewY>2.1</researchViewY></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_InternalPowerBus"]/prerequisites</xpath>
+          <value><li>CMCPowerZ</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FusionPowerBus"]/prerequisites</xpath>
+          <value><li>CMCPowerI</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_ZeroPointPower"]/prerequisites</xpath>
+          <value><li>CMCPowerII</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_MobileFabricationBay"]/prerequisites</xpath>
+          <value><li>CMC_basisLight</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_HullPlating"]/prerequisites</xpath>
+          <value><li>CMCarmor</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_SurfaceShieldMatrix"]/prerequisites</xpath>
+          <value><li>CMCShield</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_WeaponBayIntegration"]/prerequisites</xpath>
+          <value><li>CMC_DestroyerTurret</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="CT_Shuttle_FireControlRadarNetwork"]/prerequisites</xpath>
+          <value><li>CMC_Smart_III</li></value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchTabDef[defName="CT_Shuttle_ResearchTab"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

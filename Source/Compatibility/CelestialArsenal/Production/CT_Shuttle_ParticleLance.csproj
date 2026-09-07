@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{895A5743-DA6F-4EE4-A0CA-EC42C33C728B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CeleTech.ShuttleExtension.Compatibility.CelestialArsenal</RootNamespace>
+    <AssemblyName>CeleTech_Shuttle_ParticleLance</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <RimWorldDir Condition=" '$(RimWorldDir)' == '' ">$(MSBuildProjectDirectory)\..\..\..\..\..\..</RimWorldDir>
+    <ShuttleModDir Condition=" '$(ShuttleModDir)' == '' ">$(MSBuildProjectDirectory)\..\..\..\..</ShuttleModDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(ShuttleModDir)\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(ShuttleModDir)\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CeleTech_Shuttle">
+      <HintPath>$(ShuttleModDir)\Assemblies\CeleTech_Shuttle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CelestialSustainLaserBackendFactory.cs" />
+    <Compile Include="CelestialSustainLaserBeamEffects.cs" />
+    <Compile Include="CelestialSustainLaserBindingCache.cs" />
+    <Compile Include="CelestialSustainLaserBurstStarter.cs" />
+    <Compile Include="CelestialSustainLaserCastCompletion.cs" />
+    <Compile Include="CelestialSustainLaserChannelDriver.cs" />
+    <Compile Include="CelestialSustainLaserCompatibilityEvaluator.cs" />
+    <Compile Include="CelestialSustainLaserCompAccess.cs" />
+    <Compile Include="CelestialSustainLaserDamageApplier.cs" />
+    <Compile Include="CelestialSustainLaserDebugAction.cs" />
+    <Compile Include="CelestialSustainLaserFireDriver.cs" />
+    <Compile Include="CelestialSustainLaserForcedTargetEvaluator.cs" />
+    <Compile Include="CelestialSustainLaserHost.cs" />
+    <Compile Include="CelestialSustainLaserLifecycleDriver.cs" />
+    <Compile Include="CelestialSustainLaserMuzzleState.cs" />
+    <Compile Include="CelestialSustainLaserNoAmmoDriver.cs" />
+    <Compile Include="CelestialSustainLaserPowerDemandDriver.cs" />
+    <Compile Include="CelestialSustainLaserRetargetController.cs" />
+    <Compile Include="CelestialSustainLaserRuntimeDebugAction.cs" />
+    <Compile Include="CelestialSustainLaserShotExecutor.cs" />
+    <Compile Include="CelestialSustainLaserTickDriver.cs" />
+    <Compile Include="CelestialSustainLaserTickDiagnostics.cs" />
+    <Compile Include="CelestialWeaponBackendRegistrar.cs" />
+    <Compile Include="ShuttleSustainLaserDataComp.cs" />
+    <Compile Include="Verb_ShuttleCelestialSustainLaser.cs" />
+  </ItemGroup>
+  <Target Name="ValidateProductionReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll')" Text="RimWorldDir does not point to a RimWorld installation: $(RimWorldDir)" />
+    <Error Condition="!Exists('$(ShuttleModDir)\Assemblies\CeleTech_Shuttle.dll')" Text="Build the main shuttle assembly before the particle-lance assembly." />
+  </Target>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

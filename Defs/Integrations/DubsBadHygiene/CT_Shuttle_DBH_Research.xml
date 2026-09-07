@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_Research_DBH_HygieneSuite</defName>
+    <label>shuttle hygiene module</label>
+    <description>Adapt shuttle habitat infrastructure for compact shower, toilet, and sanitation support. Requires Dubs Bad Hygiene to provide actual hygiene and thirst systems.</description>
+    <baseCost>2400</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1.05</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_HabitatSupport</li>
+      <li>CT_Shuttle_InternalPowerBus</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">Plumbing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

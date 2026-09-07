@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleScannerModuleDef>
+    <defName>MyCoolMod_AlienScannerRuntimeModule</defName>
+    <label>alien scanner runtime module</label>
+    <description>Sample third-party shuttle module that declares a registered external runtime system key.</description>
+    <moduleTypeID>scanner</moduleTypeID>
+    <mass>30</mass>
+    <idlePowerDrawWatts>75</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>support</li>
+      <li>living</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>scanner</li>
+    </installableModuleSlotTypes>
+    <modExtensions>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Extensions.ShuttleRuntimeSystemDefExtension">
+        <runtimeSystemKey>my.cool.mod/alien-scanner-runtime</runtimeSystemKey>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Extensions.ShuttleProfileContributorDefExtension">
+        <contributorKey>my.cool.mod/alien-scanner-profile</contributorKey>
+      </li>
+    </modExtensions>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleScannerModuleDef>
+</Defs>

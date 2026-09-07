@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>CT_RepairShuttleHull</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Hull.JobDriver_RepairShuttleHull</driverClass>
+    <reportString>CT_Job_RepairShuttleHull_Report</reportString>
+    <playerInterruptible>true</playerInterruptible>
+  </JobDef>
+</Defs>

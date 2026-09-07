@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttlePowerRegulatorModuleDef>
+    <defName>CT_Shuttle_PowerRegulatorModule</defName>
+    <label>power regulator module</label>
+    <description>Raises maximum battery charge and discharge throughput for steadier recharging and onboard power delivery. It does not increase stored-energy capacity.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>150</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>7000</constructionWorkTicks>
+    <moduleTypeID>power-regulator</moduleTypeID>
+    <mass>80</mass>
+    <idlePowerDrawWatts>250</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>power-regulator</li>
+    </installableModuleSlotTypes>
+    <chargeRateBonusWatts>2000</chargeRateBonusWatts>
+    <chargeEfficiencyFactor>1.0</chargeEfficiencyFactor>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttlePowerRegulatorModuleDef>
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+    <defName>CT_Shuttle_CompositeBatteryBankModule</defName>
+    <label>composite battery bank module</label>
+    <description>Stores shuttle power for launch and onboard systems. Additional energy storage also raises the shuttle's usable payload limit.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </constructionCostList>
+    <constructionWorkTicks>5000</constructionWorkTicks>
+    <moduleTypeID>battery</moduleTypeID>
+    <mass>80</mass>
+    <idlePowerDrawWatts>10</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>battery</li>
+    </installableModuleSlotTypes>
+    <energyStorageCapacityWd>10000</energyStorageCapacityWd>
+    <maxChargeWatts>8000</maxChargeWatts>
+    <maxDischargeWatts>10000</maxDischargeWatts>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+    <defName>CT_Shuttle_HighDensityBatteryBankModule</defName>
+    <label>high-density battery bank module</label>
+    <description>Provides greater energy storage and charge/discharge throughput for heavier launch payloads and higher onboard power demand.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>180</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>7500</constructionWorkTicks>
+    <moduleTypeID>battery</moduleTypeID>
+    <mass>140</mass>
+    <idlePowerDrawWatts>15</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>battery</li>
+    </installableModuleSlotTypes>
+    <energyStorageCapacityWd>20000</energyStorageCapacityWd>
+    <maxChargeWatts>16000</maxChargeWatts>
+    <maxDischargeWatts>20000</maxDischargeWatts>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+    <defName>CT_Shuttle_ModularEnergyStorageCabinetModule</defName>
+    <label>modular energy storage cabinet module</label>
+    <description>Provides a large power reserve and high output for heavy-payload flights and power-hungry onboard systems.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>200</Steel>
+      <Plasteel>180</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>10000</constructionWorkTicks>
+    <moduleTypeID>battery</moduleTypeID>
+    <mass>220</mass>
+    <idlePowerDrawWatts>35</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>battery</li>
+    </installableModuleSlotTypes>
+    <energyStorageCapacityWd>40000</energyStorageCapacityWd>
+    <maxChargeWatts>24000</maxChargeWatts>
+    <maxDischargeWatts>40000</maxDischargeWatts>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TransportShipDef>
+    <defName>CT_ModularShuttleTransportShip</defName>
+    <label>Kun Peng shuttle</label>
+    <shipThing>CT_ModularShuttleHost</shipThing>
+    <arrivingSkyfaller>CT_ModularShuttleIncoming</arrivingSkyfaller>
+    <leavingSkyfaller>CT_ModularShuttleLeaving</leavingSkyfaller>
+    <worldObject>CT_ModularShuttleWorldObject</worldObject>
+    <playerShuttle>true</playerShuttle>
+  </TransportShipDef>
+</Defs>

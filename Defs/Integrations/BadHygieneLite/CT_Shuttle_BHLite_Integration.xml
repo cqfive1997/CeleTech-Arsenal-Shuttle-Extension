@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CeleTech.ShuttleExtension.AdditionalModule.Compatibility.BadHygieneLite.CT_Shuttle_BHLiteIntegrationDef>
+    <defName>CT_Shuttle_BHLiteIntegration</defName>
+    <packageIds>
+      <li>Dubwise.DubsBadHygiene.Lite</li>
+    </packageIds>
+    <fullDbhPackageIds>
+      <li>Dubwise.DubsBadHygiene</li>
+    </fullDbhPackageIds>
+    <runtimeSystemKey>celetech.shuttle.extension.integrations/bhlite-hygiene-runtime</runtimeSystemKey>
+    <panelSystemKey>celetech.shuttle.extension.integrations/bhlite-hygiene-panel</panelSystemKey>
+    <runtimeLabelKey>CT_Shuttle_Addon_BHLite_Runtime_Label</runtimeLabelKey>
+    <runtimeDescriptionKey>CT_Shuttle_Addon_BHLite_Runtime_Description</runtimeDescriptionKey>
+    <hygieneNeedDefName>Hygiene</hygieneNeedDefName>
+    <bladderNeedDefName>Bladder</bladderNeedDefName>
+    <thirstNeedDefName>DBHThirst</thirstNeedDefName>
+    <diagnosticIntervalTicks>600</diagnosticIntervalTicks>
+    <powerDemandWatts>40</powerDemandWatts>
+    <serviceEnabled>true</serviceEnabled>
+    <serviceIntervalTicks>600</serviceIntervalTicks>
+    <maxPawnsPerService>4</maxPawnsPerService>
+    <hygieneServiceThreshold>0.65</hygieneServiceThreshold>
+    <hygieneServiceGain>0.05</hygieneServiceGain>
+    <hygieneServiceTarget>0.75</hygieneServiceTarget>
+    <bladderServiceThreshold>0.35</bladderServiceThreshold>
+    <bladderServiceTarget>0.60</bladderServiceTarget>
+    <bladderDumpCallsPerService>30</bladderDumpCallsPerService>
+    <requireInternalBusPowered>true</requireInternalBusPowered>
+    <thirstServiceEnabled>false</thirstServiceEnabled>
+  </CeleTech.ShuttleExtension.AdditionalModule.Compatibility.BadHygieneLite.CT_Shuttle_BHLiteIntegrationDef>
+</Defs>

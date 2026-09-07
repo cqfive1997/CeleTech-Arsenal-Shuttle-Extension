@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>CT_ShuttleWeaponAmmo</defName>
+    <label>shuttle weapon ammunition</label>
+    <parent>Manufactured</parent>
+    <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+  </ThingCategoryDef>
+</Defs>

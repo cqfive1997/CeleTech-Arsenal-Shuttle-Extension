@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleReactorModuleDef>
+    <defName>CT_Shuttle_CompactFissionReactorModule</defName>
+    <label>compact fission reactor module</label>
+    <description>A compact fission reactor module that provides baseline shuttle power generation and grid export.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>250</Steel>
+      <Plasteel>120</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Uranium>30</Uranium>
+    </constructionCostList>
+    <constructionWorkTicks>12000</constructionWorkTicks>
+    <moduleTypeID>reactor</moduleTypeID>
+    <mass>250</mass>
+    <idlePowerDrawWatts>0</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>reactor</li>
+    </installableModuleSlotTypes>
+    <reactorGenerationWatts>10000</reactorGenerationWatts>
+    <gridExportCapacityWatts>10000</gridExportCapacityWatts>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleReactorModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleReactorModuleDef>
+    <defName>CT_Shuttle_FusionPulseReactorModule</defName>
+    <label>fusion pulse reactor module</label>
+    <description>A stronger fusion pulse reactor module for high-output shuttle power generation and export.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_FusionPowerBus</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>700</Steel>
+      <Plasteel>400</Plasteel>
+      <ComponentIndustrial>24</ComponentIndustrial>
+      <ComponentSpacer>12</ComponentSpacer>
+      <Uranium>80</Uranium>
+      <Silver>100</Silver>
+    </constructionCostList>
+    <constructionWorkTicks>16000</constructionWorkTicks>
+    <moduleTypeID>reactor</moduleTypeID>
+    <mass>500</mass>
+    <idlePowerDrawWatts>0</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>reactor</li>
+    </installableModuleSlotTypes>
+    <reactorGenerationWatts>40000</reactorGenerationWatts>
+    <gridExportCapacityWatts>40000</gridExportCapacityWatts>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleReactorModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleReactorModuleDef>
+    <defName>CT_Shuttle_ZeroPointVacuumReactorModule</defName>
+    <label>zero-point vacuum reactor module</label>
+    <description>An advanced zero-point vacuum reactor module for extreme shuttle power generation and export.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_ZeroPointPower</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>1600</Steel>
+      <Plasteel>800</Plasteel>
+      <ComponentIndustrial>50</ComponentIndustrial>
+      <ComponentSpacer>30</ComponentSpacer>
+      <Uranium>120</Uranium>
+      <Silver>200</Silver>
+      <Gold>60</Gold>
+    </constructionCostList>
+    <constructionWorkTicks>22000</constructionWorkTicks>
+    <moduleTypeID>reactor</moduleTypeID>
+    <mass>800</mass>
+    <idlePowerDrawWatts>0</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>reactor</li>
+    </installableModuleSlotTypes>
+    <reactorGenerationWatts>80000</reactorGenerationWatts>
+    <gridExportCapacityWatts>80000</gridExportCapacityWatts>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleReactorModuleDef>
+</Defs>

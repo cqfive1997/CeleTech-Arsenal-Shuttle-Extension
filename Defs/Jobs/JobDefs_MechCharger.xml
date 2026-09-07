@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CT_ShuttleMechCharge</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.MechCharging.JobDriver_ShuttleMechCharge</driverClass>
+    <reportString>CT_Shuttle_MechCharger_ChargeJobLabel</reportString>
+  </JobDef>
+</Defs>

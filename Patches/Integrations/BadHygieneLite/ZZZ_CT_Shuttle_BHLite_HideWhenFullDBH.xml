@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dubs Bad Hygiene Lite</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Dubs Bad Hygiene</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef[defName="CT_Shuttle_BHLite_HygieneModule"]/playerInstallable</xpath>
+            <value>
+              <playerInstallable>false</playerInstallable>
+            </value>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>Defs/CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef[defName="CT_Shuttle_BHLite_HygieneModule"]/installableSegmentTypes</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>Defs/CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef[defName="CT_Shuttle_BHLite_HygieneModule"]/installableModuleSlotTypes</xpath>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>Defs/CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef[defName="CT_Shuttle_BHLite_HygieneModule"]/modExtensions</xpath>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

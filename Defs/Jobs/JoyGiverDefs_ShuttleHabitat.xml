@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_ShortVideo</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_ShortVideo</jobDef>
+    <joyKind>CT_Joy_ShortVideo</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_MicroDrama</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_MicroDrama</jobDef>
+    <joyKind>CT_Joy_MicroDrama</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_DramaVariety</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_DramaVariety</jobDef>
+    <joyKind>CT_Joy_DramaVariety</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_DanmakuVideo</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_DanmakuVideo</jobDef>
+    <joyKind>CT_Joy_DanmakuVideo</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_LiveStream</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_LiveStream</jobDef>
+    <joyKind>CT_Joy_LiveStream</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_MobileGame</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_MobileGame</jobDef>
+    <joyKind>CT_Joy_MobileGame</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_ChessCards</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_ChessCards</jobDef>
+    <joyKind>CT_Joy_ChessCards</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_Karaoke</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_Karaoke</jobDef>
+    <joyKind>CT_Joy_Karaoke</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_Music</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_Music</jobDef>
+    <joyKind>CT_Joy_Music</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_WebNovel</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_WebNovel</jobDef>
+    <joyKind>CT_Joy_WebNovel</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_TeaChat</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_TeaChat</jobDef>
+    <joyKind>CT_Joy_TeaChat</joyKind>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>CT_JoyGiver_Shuttle_DanceFitness</defName>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Habitat.JoyGiver_ShuttleRecreation</giverClass>
+    <baseChance>1</baseChance>
+    <requireChair>false</requireChair>
+    <desireSit>false</desireSit>
+    <jobDef>CT_Job_ShuttleJoy_DanceFitness</jobDef>
+    <joyKind>CT_Joy_DanceFitness</joyKind>
+  </JoyGiverDef>
+</Defs>

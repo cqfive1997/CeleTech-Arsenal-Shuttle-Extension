@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>load_cargo</defName>
+    <texPath>Icon/Bottom/CargoLoding</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>cargo_shortcut</defName>
+    <texPath>Icon/Bottom/CargoUnloading</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>task_queue</defName>
+    <texPath>Icon/Bottom/TaskList</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>passenger_unloading</defName>
+    <texPath>Icon/Bottom/PassengerUnloading</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>view_switch</defName>
+    <texPath>Icon/Bottom/ChangePage</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>launch</defName>
+    <texPath>Icon/Bottom/Lunch</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>power_output</defName>
+    <texPath>Icon/Module/Power/Compact fission reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>shield</defName>
+    <texPath>Icon/Module/Shield/AreaShield</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_open_all</defName>
+    <texPath>Icon/Defense/FireControl/Panel/OpenFireAll</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_hold_all</defName>
+    <texPath>Icon/Defense/FireControl/Panel/HoldFireAll</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_target_all</defName>
+    <texPath>Icon/Defense/FireControl/Panel/TargetAll</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_clear_all</defName>
+    <texPath>Icon/Defense/FireControl/Panel/ClearTargetAll</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_mode</defName>
+    <texPath>Icon/Defense/FireControl/Panel/FireControlMode</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_link</defName>
+    <texPath>Icon/Defense/FireControl/Panel/FireControlLink</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_reload_all</defName>
+    <texPath>Icon/Defense/FireControl/Panel/ReloadAll</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_open_defense</defName>
+    <texPath>Icon/Defense/FireControl/Panel/OpenDefense</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>cargo</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>battery</defName>
+    <texPath>Icon/Module/Power/Composite battery bank</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>armor</defName>
+    <texPath>Icon/Module/Weapon/Hull</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>main</defName>
+    <texPath>Icon/Console/UIWeaker</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>brig</defName>
+    <texPath>Icon/Module/Weapon/Prison Cell</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>power</defName>
+    <texPath>Icon/Module/Power/Compact fission reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>settings</defName>
+    <texPath>Icon/Management/Setting_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>logo</defName>
+    <texPath>Icon/CeleTech/CeleTech</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>console_logo</defName>
+    <texPath>Icon/Console/Logo_transparent</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>shuttle_kunpeng</defName>
+    <texPath>Things/Building/ModularShuttle/KunPeng/KunPengShuttleSkyfaller_east</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_cargo</defName>
+    <texPath>Icon/SegmentSlot/CargoSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_cockpit</defName>
+    <texPath>Icon/SegmentSlot/CockpitSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_living</defName>
+    <texPath>Icon/SegmentSlot/LivingSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_option</defName>
+    <texPath>Icon/SegmentSlot/OptionSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_power</defName>
+    <texPath>Icon/SegmentSlot/PowerSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_support</defName>
+    <texPath>Icon/SegmentSlot/SupportSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>segment_slot_weapon</defName>
+    <texPath>Icon/SegmentSlot/WeapongSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_CockpitSegment</defName>
+    <texPath>Icon/SegmentSlot/CockpitSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_PowerSegment</defName>
+    <texPath>Icon/SegmentSlot/PowerSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_CargoSegment</defName>
+    <texPath>Icon/SegmentSlot/CargoSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SupportSegment</defName>
+    <texPath>Icon/SegmentSlot/SupportSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_WeaponBaySegment</defName>
+    <texPath>Icon/SegmentSlot/WeapongSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_LivingSegment</defName>
+    <texPath>Icon/SegmentSlot/LivingSlot</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_option</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_cargo</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_cargo_logistics_core</defName>
+    <texPath>Icon/Module/Cargo/CargoLogisticsCore</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_refrigerated_cargo</defName>
+    <texPath>Icon/Module/Cargo/RefrigdedModule</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_cockpit</defName>
+    <texPath>Icon/Module/Cockpit/CockpitModule</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_landing_stabilizer</defName>
+    <texPath>Icon/Module/Cockpit/LandStablizer</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_navigation</defName>
+    <texPath>Icon/Module/Cockpit/Navigation</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_shuttle_controller</defName>
+    <texPath>Icon/Module/Cockpit/ShuttleControler</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_habitat_i</defName>
+    <texPath>Icon/Module/Living/Habitat IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_habitat_ii</defName>
+    <texPath>Icon/Module/Living/Habitat III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_habitat_iii</defName>
+    <texPath>Icon/Module/Living/Habitat II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_habitat_iv</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>habitat</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_recreation_i</defName>
+    <texPath>Icon/Module/Living/Recreation I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_recreation_ii</defName>
+    <texPath>Icon/Module/Living/Recreation II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_recreation_iii</defName>
+    <texPath>Icon/Module/Living/Recreation III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_recreation_iv</defName>
+    <texPath>Icon/Module/Living/Recreation IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_compact_fission_reactor</defName>
+    <texPath>Icon/Module/Power/Compact fission reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_fusion_pulse_reactor</defName>
+    <texPath>Icon/Module/Power/Fusion pulse reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_zero_point_vacuum_reactor</defName>
+    <texPath>Icon/Module/Power/Zero-point vacuum reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_composite_battery_bank</defName>
+    <texPath>Icon/Module/Power/Composite battery bank</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_high_density_battery_bank</defName>
+    <texPath>Icon/Module/Power/High-density battery bank</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_modular_energy_storage</defName>
+    <texPath>Icon/Module/Power/Modular energy storage</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_PowerRegulatorModule</defName>
+    <texPath>Icon/Module/Power/PowerRegular</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_area_shield</defName>
+    <texPath>Icon/Module/Shield/AreaShield</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_surface_shield_i</defName>
+    <texPath>Icon/Module/Shield/Surface Shield I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_surface_shield_ii</defName>
+    <texPath>Icon/Module/Shield/Surface Shield II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_surface_shield_iii</defName>
+    <texPath>Icon/Module/Shield/Surface Shield III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_surface_shield_iv</defName>
+    <texPath>Icon/Module/Shield/Surface Shield IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_mech_charger</defName>
+    <texPath>Icon/Module/Support/MechCharger I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_mech_charger_i</defName>
+    <texPath>Icon/Module/Support/MechCharger I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_mech_charger_ii</defName>
+    <texPath>Icon/Module/Support/MechCharger II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_mech_charger_iii</defName>
+    <texPath>Icon/Module/Support/MechCharger III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_mech_charger_iv</defName>
+    <texPath>Icon/Module/Support/IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_medical_bay_i</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_medical_bay_ii</defName>
+    <texPath>Icon/Module/Support/Medical Bay II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_medical_bay_iii</defName>
+    <texPath>Icon/Module/Support/Medical Bay III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_medical_bay_iv</defName>
+    <texPath>Icon/Module/Support/Medical Bay IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_weapon_6mm_point</defName>
+    <texPath>Icon/Module/Weapon/6mmPoint</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_weapon_40mm_close_in</defName>
+    <texPath>Icon/Module/Weapon/40mmCloseIn</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_hull_armor</defName>
+    <texPath>Icon/Module/Weapon/Hull</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_ammo_loader</defName>
+    <texPath>Icon/Module/Weapon/Ammo Loader</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_prison_cell</defName>
+    <texPath>Icon/Module/Weapon/Prison Cell</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_workbench_auto</defName>
+    <texPath>Icon/Module/Workbench/AutoWorkbench</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_auto_kitchen</defName>
+    <texPath>Icon/Module/Workbench/AutoKitchen</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>landing_stabilizer</defName>
+    <texPath>Icon/Module/Cockpit/LandStablizer</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>cargo_loader</defName>
+    <texPath>Icon/Module/Cargo/CargoLogisticsCore</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>navigation_computer</defName>
+    <texPath>Icon/Module/Cockpit/Navigation</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_bay</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>shield_module</defName>
+    <texPath>Icon/Module/Shield/AreaShield</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>workbench_module</defName>
+    <texPath>Icon/Module/Workbench/AutoWorkbench</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>refrigerated_cargo</defName>
+    <texPath>Icon/Module/Cargo/RefrigdedModule</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>fire_control_radar</defName>
+    <texPath>Icon/Module/Weapon/Fire Controller</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>scanner_module</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>power_regulator</defName>
+    <texPath>Icon/Module/Power/Modular energy storage</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>universal_module_plus</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>expansion_slot</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>auxiliary_slot</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>communication_module</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>data_link_slot</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>redundant_system_slot</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>main_control_slot</defName>
+    <texPath>Icon/Module/Cockpit/ShuttleControler</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>communication_slot</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>sensor_slot</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>navigation_slot</defName>
+    <texPath>Icon/Module/Cockpit/Navigation</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>warning</defName>
+    <texPath>Icon/Management/Setting_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>disable</defName>
+    <texPath>Icon/Management/PowerOff_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>restore</defName>
+    <texPath>Icon/Management/PowerOn_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>install</defName>
+    <texPath>Icon/Management/Expand_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>remove</defName>
+    <texPath>Icon/Management/Remove_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>replace</defName>
+    <texPath>Icon/Management/Setting_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>rest</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>food</defName>
+    <texPath>Icon/Module/Workbench/AutoKitchen</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>joy</defName>
+    <texPath>Icon/Module/Living/Recreation I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>standby</defName>
+    <texPath>Icon/Console/UIWeaker</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>repair</defName>
+    <texPath>Icon/Management/Setting_128</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_pending</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>manufactured</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>raw_resources</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>items</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>weapons</defName>
+    <texPath>Icon/Module/Weapon/40mmCloseIn</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>apparel</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>buildings</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>chunks</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>plants</defName>
+    <texPath>Icon/Module/Workbench/AutoKitchen</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>corpses</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_stable</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_minor</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_moderate</defName>
+    <texPath>Icon/Module/Support/Medical Bay II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_severe</defName>
+    <texPath>Icon/Module/Support/Medical Bay III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_critical</defName>
+    <texPath>Icon/Module/Support/Medical Bay IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_recovering</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>medical_worsening</defName>
+    <texPath>Icon/Module/Support/Medical Bay III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_colonist</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_slave</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_prisoner</defName>
+    <texPath>Icon/Module/Weapon/Prison Cell</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_human</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_mech</defName>
+    <texPath>Icon/Module/Support/MechCharger I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_animal</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_entity</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>crew_patient</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>cockpit</defName>
+    <texPath>Icon/Module/Cockpit/CockpitModule</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_CockpitModule</defName>
+    <texPath>Icon/Module/Cockpit/CockpitModule</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_NavigationComputerModule</defName>
+    <texPath>Icon/Module/Cockpit/Navigation</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_AdvancedNavigationComputerModule</defName>
+    <texPath>Icon/Module/Cockpit/AdvancedNavigation</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_DriveControlModule</defName>
+    <texPath>Icon/Module/Cockpit/ShuttleControler</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_LandingStabilizerModule</defName>
+    <texPath>Icon/Module/Cockpit/LandStablizer</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_CargoLatchModule</defName>
+    <texPath>Icon/Module/Cargo/Cargo</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Module_CargoLogisticsCore</defName>
+    <texPath>Icon/Module/Cargo/CargoLogisticsCore</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_RefrigeratedCargoModule</defName>
+    <texPath>Icon/Module/Cargo/RefrigdedModule</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SupportModule</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_BasicShieldModule</defName>
+    <texPath>Icon/Module/Shield/AreaShield</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SurfaceShield_Mk1</defName>
+    <texPath>Icon/Module/Shield/Surface Shield I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SurfaceShield_I</defName>
+    <texPath>Icon/Module/Shield/Surface Shield I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SurfaceShield_II</defName>
+    <texPath>Icon/Module/Shield/Surface Shield II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SurfaceShield_III</defName>
+    <texPath>Icon/Module/Shield/Surface Shield III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_SurfaceShield_IV</defName>
+    <texPath>Icon/Module/Shield/Surface Shield IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_ScannerModule</defName>
+    <texPath>Icon/Module/Workbench/Option</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_CompositeBatteryBankModule</defName>
+    <texPath>Icon/Module/Power/Composite battery bank</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_HighDensityBatteryBankModule</defName>
+    <texPath>Icon/Module/Power/High-density battery bank</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_ModularEnergyStorageCabinetModule</defName>
+    <texPath>Icon/Module/Power/Modular energy storage</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_CompactFissionReactorModule</defName>
+    <texPath>Icon/Module/Power/Compact fission reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_FusionPulseReactorModule</defName>
+    <texPath>Icon/Module/Power/Fusion pulse reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_ZeroPointVacuumReactorModule</defName>
+    <texPath>Icon/Module/Power/Zero-point vacuum reactor</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Habitat_I</defName>
+    <texPath>Icon/Module/Living/Habitat IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Habitat_II</defName>
+    <texPath>Icon/Module/Living/Habitat III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Habitat_III</defName>
+    <texPath>Icon/Module/Living/Habitat II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Habitat_IV</defName>
+    <texPath>Icon/Module/Living/Habitat I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_RecreationRoom_Decent</defName>
+    <texPath>Icon/Module/Living/Recreation I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_RecreationRoom_Comfortable</defName>
+    <texPath>Icon/Module/Living/Recreation II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_RecreationRoom_Impressive</defName>
+    <texPath>Icon/Module/Living/Recreation III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_RecreationRoom_VeryImpressive</defName>
+    <texPath>Icon/Module/Living/Recreation IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MedicalBay_I</defName>
+    <texPath>Icon/Module/Support/Medical Bay I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MedicalBay_II</defName>
+    <texPath>Icon/Module/Support/Medical Bay II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MedicalBay_III</defName>
+    <texPath>Icon/Module/Support/Medical Bay III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MedicalBay_IV</defName>
+    <texPath>Icon/Module/Support/Medical Bay IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MechCharger_I</defName>
+    <texPath>Icon/Module/Support/MechCharger I</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MechCharger_II</defName>
+    <texPath>Icon/Module/Support/MechCharger II</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MechCharger_III</defName>
+    <texPath>Icon/Module/Support/MechCharger III</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_MechCharger_IV</defName>
+    <texPath>Icon/Module/Support/IV</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_AutoWorkTableModule</defName>
+    <texPath>Icon/Module/Workbench/AutoWorkbench</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_AutoKitchen_Basic</defName>
+    <texPath>Icon/Module/Workbench/AutoKitchen</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Module_AmmoLoader_I</defName>
+    <texPath>Icon/Module/Weapon/Ammo Loader</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_FireControlRadar_Basic</defName>
+    <texPath>Icon/Module/Weapon/Fire Controller</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_HullPlatingModule</defName>
+    <texPath>Icon/Module/Weapon/Hull</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_PrisonCell_Basic</defName>
+    <texPath>Icon/Module/Weapon/Prison Cell</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Module_6mmPointDefense</defName>
+    <texPath>Icon/Module/Weapon/6mmPoint</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Module_40mmCIWS</defName>
+    <texPath>Icon/Module/Weapon/40mmCloseIn</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Main</defName>
+    <label>Main</label>
+    <order>0</order>
+    <iconKey>main</iconKey>
+    <pageKind>Main</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Crew</defName>
+    <label>Crew</label>
+    <order>10</order>
+    <iconKey>crew</iconKey>
+    <pageKind>Crew</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Defense</defName>
+    <label>Defense</label>
+    <order>20</order>
+    <iconKey>shield</iconKey>
+    <pageKind>Defense</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Medical</defName>
+    <label>Medical</label>
+    <order>30</order>
+    <iconKey>medical</iconKey>
+    <pageKind>Medical</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>PrisonCell</defName>
+    <label>Prison cell</label>
+    <order>35</order>
+    <iconKey>brig</iconKey>
+    <pageKind>PrisonCell</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Loading</defName>
+    <label>Loading</label>
+    <order>40</order>
+    <iconKey>cargo</iconKey>
+    <pageKind>Loading</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Processing</defName>
+    <label>Processing</label>
+    <order>50</order>
+    <iconKey>workbench_module</iconKey>
+    <pageKind>Processing</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>ExternalModules</defName>
+    <label>External modules</label>
+    <order>55</order>
+    <iconKey>module_option</iconKey>
+    <pageKind>ExternalModules</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Performance</defName>
+    <label>Performance</label>
+    <order>58</order>
+    <iconKey>settings</iconKey>
+    <pageKind>Performance</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+    <defName>Settings</defName>
+    <label>Settings</label>
+    <order>60</order>
+    <iconKey>settings</iconKey>
+    <pageKind>Settings</pageKind>
+    <enabled>true</enabled>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlPageDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Colonist</defName>
+    <label>殖民者</label>
+    <iconKey>crew_colonist</iconKey>
+    <cardColor>(0.080, 0.125, 0.172, 0.94)</cardColor>
+    <textColor>(0.28, 0.64, 0.86, 1)</textColor>
+    <order>0</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Slave</defName>
+    <label>奴隶</label>
+    <iconKey>crew_slave</iconKey>
+    <cardColor>(0.235, 0.185, 0.095, 0.94)</cardColor>
+    <textColor>(0.82, 0.62, 0.30, 1)</textColor>
+    <order>10</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Prisoner</defName>
+    <label>囚犯</label>
+    <iconKey>crew_prisoner</iconKey>
+    <cardColor>(0.215, 0.095, 0.095, 0.94)</cardColor>
+    <textColor>(0.86, 0.34, 0.30, 1)</textColor>
+    <order>20</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Human</defName>
+    <label>人类</label>
+    <iconKey>crew_human</iconKey>
+    <cardColor>(0.080, 0.125, 0.172, 0.94)</cardColor>
+    <textColor>(0.28, 0.64, 0.86, 1)</textColor>
+    <order>30</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Mechanoid</defName>
+    <label>机械体</label>
+    <iconKey>crew_mech</iconKey>
+    <cardColor>(0.080, 0.132, 0.150, 0.94)</cardColor>
+    <textColor>(0.28, 0.64, 0.86, 1)</textColor>
+    <order>40</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Animal</defName>
+    <label>动物</label>
+    <iconKey>crew_animal</iconKey>
+    <cardColor>(0.112, 0.142, 0.105, 0.94)</cardColor>
+    <textColor>(0.42, 0.78, 0.55, 1)</textColor>
+    <order>50</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Entity</defName>
+    <label>实体</label>
+    <iconKey>crew_entity</iconKey>
+    <cardColor>(0.122, 0.110, 0.150, 0.94)</cardColor>
+    <textColor>(0.72, 0.64, 0.90, 1)</textColor>
+    <order>60</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+    <defName>Patient</defName>
+    <label>病患</label>
+    <iconKey>crew_patient</iconKey>
+    <cardColor>(0.085, 0.145, 0.160, 0.94)</cardColor>
+    <textColor>(0.42, 0.78, 0.55, 1)</textColor>
+    <order>70</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewKindDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>InCockpit</defName>
+    <label>驾驶舱内</label>
+    <iconKey>cockpit</iconKey>
+    <color>(0.65, 0.71, 0.77, 1)</color>
+    <order>0</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Resting</defName>
+    <label>休息</label>
+    <iconKey>rest</iconKey>
+    <color>(0.28, 0.64, 0.86, 1)</color>
+    <order>10</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Eating</defName>
+    <label>吃饭</label>
+    <iconKey>food</iconKey>
+    <color>(0.82, 0.62, 0.30, 1)</color>
+    <order>20</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Recreation</defName>
+    <label>娱乐</label>
+    <iconKey>joy</iconKey>
+    <color>(0.42, 0.78, 0.55, 1)</color>
+    <order>30</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Recovering</defName>
+    <label>修养</label>
+    <iconKey>medical</iconKey>
+    <color>(0.42, 0.78, 0.55, 1)</color>
+    <order>40</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Detained</defName>
+    <label>关押</label>
+    <iconKey>brig</iconKey>
+    <color>(0.86, 0.34, 0.30, 1)</color>
+    <order>50</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Charging</defName>
+    <label>充电</label>
+    <iconKey>power</iconKey>
+    <color>(0.28, 0.64, 0.86, 1)</color>
+    <order>60</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Standby</defName>
+    <label>待命</label>
+    <iconKey>standby</iconKey>
+    <color>(0.65, 0.71, 0.77, 1)</color>
+    <order>70</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>Repairing</defName>
+    <label>维修中</label>
+    <iconKey>repair</iconKey>
+    <color>(0.28, 0.64, 0.86, 1)</color>
+    <order>80</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+    <defName>TreatmentPending</defName>
+    <label>待治疗</label>
+    <iconKey>medical_pending</iconKey>
+    <color>(0.82, 0.62, 0.30, 1)</color>
+    <order>90</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCrewActivityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Food</defName>
+    <label>food</label>
+    <shortLabel>food</shortLabel>
+    <iconKey>food</iconKey>
+    <color>(0.42, 0.78, 0.55, 1)</color>
+    <order>0</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Manufactured</defName>
+    <label>manufactured</label>
+    <shortLabel>goods</shortLabel>
+    <iconKey>manufactured</iconKey>
+    <color>(0.28, 0.64, 0.86, 1)</color>
+    <order>10</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>RawResources</defName>
+    <label>raw resources</label>
+    <shortLabel>raw</shortLabel>
+    <iconKey>raw_resources</iconKey>
+    <color>(0.82, 0.62, 0.30, 1)</color>
+    <order>20</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Items</defName>
+    <label>items</label>
+    <shortLabel>items</shortLabel>
+    <iconKey>items</iconKey>
+    <color>(0.65, 0.71, 0.77, 1)</color>
+    <order>30</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Weapons</defName>
+    <label>weapons</label>
+    <shortLabel>weapons</shortLabel>
+    <iconKey>weapons</iconKey>
+    <color>(0.86, 0.34, 0.30, 1)</color>
+    <order>40</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Apparel</defName>
+    <label>apparel</label>
+    <shortLabel>apparel</shortLabel>
+    <iconKey>apparel</iconKey>
+    <color>(0.72, 0.64, 0.90, 1)</color>
+    <order>50</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Buildings</defName>
+    <label>buildings</label>
+    <shortLabel>buildings</shortLabel>
+    <iconKey>buildings</iconKey>
+    <color>(0.65, 0.71, 0.77, 1)</color>
+    <order>60</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Chunks</defName>
+    <label>chunks</label>
+    <shortLabel>chunks</shortLabel>
+    <iconKey>chunks</iconKey>
+    <color>(0.82, 0.62, 0.30, 1)</color>
+    <order>70</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Plants</defName>
+    <label>plants</label>
+    <shortLabel>plants</shortLabel>
+    <iconKey>plants</iconKey>
+    <color>(0.42, 0.78, 0.55, 1)</color>
+    <order>80</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+    <defName>Corpses</defName>
+    <label>corpses</label>
+    <shortLabel>corpses</shortLabel>
+    <iconKey>corpses</iconKey>
+    <color>(0.86, 0.34, 0.30, 1)</color>
+    <order>90</order>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleCargoCategoryUIDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Stable</defName>
+    <label>稳定</label>
+    <color>(0.42, 0.78, 0.55, 1)</color>
+    <priority>0</priority>
+    <iconKey>medical_stable</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Minor</defName>
+    <label>轻微</label>
+    <color>(0.65, 0.71, 0.77, 1)</color>
+    <priority>10</priority>
+    <iconKey>medical_minor</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Moderate</defName>
+    <label>需观察</label>
+    <color>(0.82, 0.62, 0.30, 1)</color>
+    <priority>20</priority>
+    <iconKey>medical_moderate</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Severe</defName>
+    <label>严重</label>
+    <color>(0.86, 0.34, 0.30, 1)</color>
+    <priority>30</priority>
+    <iconKey>medical_severe</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Critical</defName>
+    <label>危急</label>
+    <color>(0.78, 0.18, 0.18, 1)</color>
+    <priority>40</priority>
+    <iconKey>medical_critical</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Recovering</defName>
+    <label>恢复中</label>
+    <color>(0.42, 0.78, 0.55, 1)</color>
+    <priority>50</priority>
+    <iconKey>medical_recovering</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+    <defName>Worsening</defName>
+    <label>恶化中</label>
+    <color>(0.82, 0.62, 0.30, 1)</color>
+    <priority>60</priority>
+    <iconKey>medical_worsening</iconKey>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMedicalSeverityDef>
+</Defs>

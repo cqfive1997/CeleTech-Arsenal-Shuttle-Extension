@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>CT_Shuttle_ResearchTab</defName>
+    <label>CeleTech Foundry - Shuttle Expansion</label>
+    <generalTitle>CeleTech Foundry - Shuttle Expansion</generalTitle>
+    <generalDescription>Research modular shuttle structure, onboard power, flight control, cargo systems, habitation, medical evacuation, shielding, and fire-control systems.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_ModularAirframe</defName>
+    <label>modular shuttle frame</label>
+    <description>Develop modular shuttle structure and the basic interfaces needed to assemble shuttle segments and modules.
+
+Unlocks:
+- Basic cockpit
+- Basic frame
+- Basic cargo segment
+- Basic control module</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_InternalPowerBus</defName>
+    <label>internal power bus</label>
+    <description>Build shuttle-owned power distribution hardware for reactors, batteries, regulators, and onboard module demand.
+
+Unlocks:
+- Reactor modules
+- Battery modules
+- Power regulators
+- Power segment</description>
+    <baseCost>2200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_ModularAirframe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_FusionPowerBus</defName>
+    <label>shuttle fusion power bus</label>
+    <description>Unlocks compact fusion pulse reactor modules for high-output shuttle power systems.
+
+Unlocks:
+- Fusion pulse reactor module</description>
+    <baseCost>4800</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_FlightControlMatrix</defName>
+    <label>shuttle flight-control matrix</label>
+    <description>Integrate shuttle navigation computation, drive control, and flight envelope coordination.
+
+Unlocks:
+- Navigation computer
+- Flight-control modules
+- Propulsion control modules</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_ModularAirframe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_CargoBayEngineering</defName>
+    <label>cargo bay engineering</label>
+    <description>Develop modular cargo bay structure, internal cargo regions, and shuttle loading support.
+
+Unlocks:
+- Standard cargo segment
+- Cargo modules
+- Loading support modules</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_ModularAirframe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_ColdChainCargo</defName>
+    <label>cold-chain cargo systems</label>
+    <description>Adapt shuttle cargo bays for refrigerated logistics and low-temperature in-flight storage.
+
+Unlocks:
+- Cold-chain cargo modules
+- Low-temperature storage modules
+- Refrigerated cargo segment</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_CargoBayEngineering</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_HabitatSupport</defName>
+    <label>habitat support systems</label>
+    <description>Engineer shuttle habitat modules for rest, meals, and short-duration living support.
+
+Unlocks:
+- Habitat support modules
+- Living segment
+- Crew support units</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_CargoBayEngineering</li>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_LandingStabilization</defName>
+    <label>landing stabilization systems</label>
+    <description>Improve landing and launch stabilization for adverse shuttle flight conditions.
+
+Unlocks:
+- Landing stabilizer module
+- Launch and landing assist systems</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_FlightControlMatrix</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_MedicalEvacuationBay</defName>
+    <label>medical transport bay</label>
+    <description>Outfit shuttle support bays for patient carriage, emergency comfort, and medical transport workflows.
+
+Unlocks:
+- Medical transport bay
+- Medical bay modules
+- Casualty transport support units</description>
+    <baseCost>2200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_HabitatSupport</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_PrisonerContainment</defName>
+    <label>shuttle prisoner containment</label>
+    <description>Adapt shuttle living sections for secured prisoner transport.
+
+Unlocks:
+- Prison cell module</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_HabitatSupport</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CT_Shuttle_MechLogisticsInterface</defName>
+    <label>mechanoid logistics interface</label>
+    <description>Prepare shuttle support bays for mechanoid logistics and onboard charging infrastructure.
+
+Unlocks:
+- Mechanoid logistics interface
+- Mechanoid charging modules</description>
+    <baseCost>2800</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_InternalPowerBus</li>
+      <li>CT_Shuttle_HabitatSupport</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_MobileFabricationBay</defName>
+    <label>mobile fabrication bay</label>
+    <description>Convert modular cargo or support space into automated mobile fabrication and processing bays.
+
+Unlocks:
+- Mobile fabrication bay
+- Auto worktable module</description>
+    <baseCost>3600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_CargoBayEngineering</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_HullPlating</defName>
+    <label>shuttle hull plating</label>
+    <description>Unlocks hull plating modules for modular shuttles. Hull plating adds a material-dependent armor layer and hull integrity buffer before the shuttle's main structure takes damage.
+
+Unlocks:
+- Hull plating</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_ModularAirframe</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_SurfaceShieldMatrix</defName>
+    <label>surface shield matrix</label>
+    <description>Develop hull-attached surface shield matrices and shuttle-owned shield recharge routing.
+
+Unlocks:
+- Surface shield modules
+- Shield projection modules</description>
+    <baseCost>5600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_HullPlating</li>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_ZeroPointPower</defName>
+    <label>shuttle zero-point power</label>
+    <description>Unlocks zero-point vacuum reactor modules for extreme-output late-game shuttle power systems.
+
+Unlocks:
+- Zero-point vacuum reactor module</description>
+    <baseCost>8000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_FusionPowerBus</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_WeaponBayIntegration</defName>
+    <label>weapon bay integration</label>
+    <description>Integrate shuttle weapon bays, internal weapon mounts, and basic weapon control buses.
+
+Unlocks:
+- Weapon bay modules
+- Weapon mount modules</description>
+    <baseCost>3600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_FlightControlMatrix</li>
+      <li>CT_Shuttle_InternalPowerBus</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_FireControlRadarNetwork</defName>
+    <label>fire-control radar network</label>
+    <description>Coordinate advanced shuttle weapons through radar and fire-control systems.
+
+Unlocks:
+- Fire-control radar modules
+- Advanced weapon control units</description>
+    <baseCost>3200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_WeaponBayIntegration</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CT_Shuttle_AutomaticAmmoLoading</defName>
+    <label>automatic ammo loading</label>
+    <description>Develop shuttle weapon ammunition handling hardware for automated reload requests.
+
+Unlocks:
+- Ammo loader module</description>
+    <baseCost>2800</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>CT_Shuttle_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1.4</researchViewY>
+    <prerequisites>
+      <li>CT_Shuttle_WeaponBayIntegration</li>
+      <li>CT_Shuttle_CargoBayEngineering</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

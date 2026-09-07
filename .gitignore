@@ -1,0 +1,58 @@
+# IDE and user state
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.vsidx
+
+# Build output
+bin/
+obj/
+*.dll
+*.pdb
+*.mdb
+
+# Runtime packages and omitted asset trees
+/1.6/
+/About/
+/Assemblies/
+/Assets/
+/Languages/
+/Sounds/
+/Textures/
+/_DevMedia/
+/release/
+/ShuttleFlameBundleProject/
+/ShuttlePaintBundleProject/
+/ShuttleVaporBundleProject/
+
+# Media, source art, archives, and Unity output
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.ogg
+*.wav
+*.mp3
+*.flac
+*.assetbundle
+*.bundle
+*.kra
+*.psd
+*.xcf
+*.clip
+*.blend
+*.ase
+*.aseprite
+*.zip
+*.7z
+*.rar
+
+# Local and platform files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

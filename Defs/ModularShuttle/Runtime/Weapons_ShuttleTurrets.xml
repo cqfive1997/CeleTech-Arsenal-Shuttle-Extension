@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="CT_Shuttle_InternalWeaponBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <equipmentType>None</equipmentType>
+    <useHitPoints>true</useHitPoints>
+    <selectable>false</selectable>
+    <rotatable>false</rotatable>
+    <alwaysHaulable>false</alwaysHaulable>
+    <designateHaulable>false</designateHaulable>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <genericMarketSellable>false</genericMarketSellable>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <relicChance>0</relicChance>
+    <smeltable>false</smeltable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>0</Beauty>
+      <SellPriceFactor>0</SellPriceFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="CT_Shuttle_InternalWeaponBase">
+    <defName>CT_Shuttle_Weapon_6mmPointDefenseGun</defName>
+    <label>6mm point-defense weapon</label>
+    <description>An internal shuttle point-defense weapon for short-range projectile and small-target coverage. It is mounted through a shuttle weapon module and is not a placeable turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/MachinePistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <smeltable>false</smeltable>
+    <statBases>
+      <Mass>12.5</Mass>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>CeleTech.ShuttleExtension.ModularShuttle.Weapons.Verb_ShuttleMuzzleShoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>CT_Shuttle_Projectile_6mmPD</defaultProjectile>
+        <warmupTime>0.15</warmupTime>
+        <range>30</range>
+        <burstShotCount>12</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>CT_CA_Weapon_6mmPD_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="CT_Shuttle_InternalWeaponBase">
+    <defName>CT_Shuttle_Weapon_40mmCIWSCannon</defName>
+    <label>40mm close-in weapon cannon</label>
+    <description>An internal shuttle close-in weapon cannon. It fires heavier 40mm shells for sustained close-range defensive fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <smeltable>false</smeltable>
+    <statBases>
+      <Mass>28</Mass>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>0.93</AccuracyShort>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>CeleTech.ShuttleExtension.ModularShuttle.Weapons.Verb_ShuttleMuzzleShoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>CT_Shuttle_Projectile_40mmCIWS</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>60</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>CT_CA_Weapon_40mmCIWS_Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

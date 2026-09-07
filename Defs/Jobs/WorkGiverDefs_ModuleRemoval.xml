@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>CT_Shuttle_DeconstructModuleWork</defName>
+    <label>deconstruct shuttle module</label>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.Runtime.AssemblyRemoval.WorkGiver_DeconstructShuttleModule</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>80</priorityInType>
+    <verb>deconstruct</verb>
+    <gerund>deconstructing</gerund>
+  </WorkGiverDef>
+</Defs>

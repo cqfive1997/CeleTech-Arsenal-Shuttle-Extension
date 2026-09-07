@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>CT_ModularShuttleHost</defName>
+    <label>Kun Peng shuttle</label>
+    <description>A live modular shuttle host used to prove the real shuttle gameplay loop against the current modular architecture.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_ModularAirframe</li>
+    </researchPrerequisites>
+    <thingClass>CeleTech.ShuttleExtension.ModularShuttle.Core.Building_ModularShuttle</thingClass>
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <size>(5,9)</size>
+    <drawHighlight>true</drawHighlight>
+    <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+    <uiIconScale>1</uiIconScale>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/ModularShuttle/KunPeng/KunPengShuttleSkyfaller</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,9)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>36000</WorkToBuild>
+      <Mass>125</Mass>
+      <Comfort>0.65</Comfort>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Odyssey</designationCategory>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+      <Steel>250</Steel>
+      <Plasteel>150</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <canOverlapZones>true</canOverlapZones>
+    <killedLeavings>
+      <Steel>50</Steel>
+      <Plasteel>50</Plasteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </killedLeavings>
+    <rotatable>true</rotatable>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-5)</interactionCellOffset>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <drawerType>RealtimeOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <building>
+      <claimable>false</claimable>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <paintable>true</paintable>
+      <isInert>true</isInert>
+    </building>
+    <comps>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Core.CompProperties_ModularShuttleCore">
+        <defaultAssemblyLayoutDefName>CT_KunPeng_DefaultLayout</defaultAssemblyLayoutDefName>
+      </li>
+      <!-- Keep the transporter before other IThingHolder comps. Vanilla HaulToTransporter
+           resolves the first interactable holder on the host. -->
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularTransporter">
+        <massCapacity>500</massCapacity>
+        <max1PerGroup>true</max1PerGroup>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+        <pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
+        <pawnExitSound>Shuttle_PawnExit</pawnExitSound>
+        <showMassInInspectString>true</showMassInInspectString>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttleHabitatOccupancy" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttleMedicalBayOccupancy" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttleMedicalProcedureOccupancy" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttlePrisonCellOccupancy" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttleMechChargerOccupancy" MayRequire="Ludeon.RimWorld.Biotech" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttleHolderLaunchTransferState" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttleRefrigeratedCargoRegistry" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ShuttlePointDefenseAssignments" />
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularShuttleProjectileInterceptor">
+        <hitPoints>0</hitPoints>
+        <radius>0</radius>
+        <startWithMaxHitPoints>false</startWithMaxHitPoints>
+        <interceptGroundProjectiles>false</interceptGroundProjectiles>
+        <interceptAirProjectiles>false</interceptAirProjectiles>
+        <interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularShuttleLandingGearVisual">
+        <texturePath>Things/Building/ModularShuttle/KunPeng/KunPengLandingGearLayer</texturePath>
+        <drawSize>(7,9)</drawSize>
+        <drawOffset>(0,0,0)</drawOffset>
+        <drawAltitudeOffset>-0.05</drawAltitudeOffset>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularShuttleWeaponTurretVisual">
+        <turretTexturePath>Things/Building/ModularShuttle/KunPeng/DefaultTurrent</turretTexturePath>
+        <turretDrawSize>(2.60,2.60)</turretDrawSize>
+        <artworkRotationOffset>270</artworkRotationOffset>
+        <rotationSpeedDegreesPerSecond>360</rotationSpeedDegreesPerSecond>
+        <launchIdleReturnSpeedDegreesPerSecond>120</launchIdleReturnSpeedDegreesPerSecond>
+        <minLaunchIdleReturnTicks>18</minLaunchIdleReturnTicks>
+        <muzzleForwardOffset>1.08</muzzleForwardOffset>
+        <drawAltitudeOffset>-0.02</drawAltitudeOffset>
+        <!-- East-authored idle angles are body-relative authoring angles expressed in world-angle notation:
+             for the East-facing source art, 90 is nose/E and 270 is tail/W. Runtime code rotates this
+             value by the shuttle's current rotation before the launch-idle return animation.
+             The raw turret PNG points west; artworkRotationOffset handles that texture correction separately. -->
+        <mounts>
+          <li>
+            <parentSlotIndex>1</parentSlotIndex>
+            <localOffset>(-2.17,0,-1.68)</localOffset>
+            <idleAngleEast>270</idleAngleEast>
+          </li>
+          <li>
+            <parentSlotIndex>2</parentSlotIndex>
+            <localOffset>(-2.05,0,1.30)</localOffset>
+            <westLocalOffsetAdjustment>(-0.12,0,0.38)</westLocalOffsetAdjustment>
+            <idleAngleEast>270</idleAngleEast>
+          </li>
+          <li>
+            <parentSlotIndex>3</parentSlotIndex>
+            <localOffset>(2.70,0,0.00)</localOffset>
+            <idleAngleEast>270</idleAngleEast>
+          </li>
+        </mounts>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularShuttleSurfaceShieldVisual">
+        <maxPulses>8</maxPulses>
+        <pulseLifetimeTicks>45</pulseLifetimeTicks>
+        <minPulseRadius>0.35</minPulseRadius>
+        <maxPulseRadius>2.5</maxPulseRadius>
+        <devLogPulses>false</devLogPulses>
+        <enableShaderRendering>true</enableShaderRendering>
+        <drawWhenShieldOffline>false</drawWhenShieldOffline>
+        <drawIdleSurfaceEffect>true</drawIdleSurfaceEffect>
+        <drawFallbackPulsesOverShader>false</drawFallbackPulsesOverShader>
+        <drawImpactSparksOverShader>true</drawImpactSparksOverShader>
+        <shaderOverlaySparkAlphaMultiplier>0.45</shaderOverlaySparkAlphaMultiplier>
+        <maxShaderOverlaySparkPulses>4</maxShaderOverlaySparkPulses>
+        <meshPadding>0.5</meshPadding>
+        <fallbackBaseAlpha>0.85</fallbackBaseAlpha>
+        <fallbackFlashAlpha>0.62</fallbackFlashAlpha>
+        <fallbackRingAlpha>0.95</fallbackRingAlpha>
+        <fallbackSecondRingAlpha>0.55</fallbackSecondRingAlpha>
+        <fallbackSplashAlpha>0.48</fallbackSplashAlpha>
+        <fallbackSplashCount>6</fallbackSplashCount>
+        <fallbackSplashRadiusFactor>0.38</fallbackSplashRadiusFactor>
+        <fallbackBreakAlphaMultiplier>1.72</fallbackBreakAlphaMultiplier>
+        <fallbackBreakRadiusMultiplier>1.12</fallbackBreakRadiusMultiplier>
+        <hullOverlayBaseAlpha>0.075</hullOverlayBaseAlpha>
+        <hullOverlayEdgeGlowAlpha>0.22</hullOverlayEdgeGlowAlpha>
+        <hullOverlaySweepAlpha>0.055</hullOverlaySweepAlpha>
+        <hullOverlayImpactAlpha>0.92</hullOverlayImpactAlpha>
+        <hullOverlayRippleWidth>0.032</hullOverlayRippleWidth>
+        <hullOverlayLowShieldFlicker>0.8</hullOverlayLowShieldFlicker>
+        <idleSurfaceBaseAlpha>0.04</idleSurfaceBaseAlpha>
+        <idleSurfaceEdgeGlowAlpha>0.58</idleSurfaceEdgeGlowAlpha>
+        <edgeGlowWidth>1.1</edgeGlowWidth>
+        <enableGpuHullEdgeGlow>true</enableGpuHullEdgeGlow>
+        <hullOutlineAlphaThreshold>0.1</hullOutlineAlphaThreshold>
+        <hullOutlineGlowAlpha>0.58</hullOutlineGlowAlpha>
+        <hullOutlineEdgeDetectScale>13.0</hullOutlineEdgeDetectScale>
+        <hullOutlineLowShieldFlicker>0.18</hullOutlineLowShieldFlicker>
+        <hullOutlineSampleOffsetScale>3.6</hullOutlineSampleOffsetScale>
+        <hullOutlineHitBoost>0.35</hullOutlineHitBoost>
+        <hullOutlineEdgeSoftness>0.16</hullOutlineEdgeSoftness>
+        <idleSurfaceSweepAlpha>0.015</idleSurfaceSweepAlpha>
+        <sweepBandSpeed>0.0008</sweepBandSpeed>
+        <sweepBandSpacing>0.26</sweepBandSpacing>
+        <sweepBandWidth>0.04</sweepBandWidth>
+        <sweepBandSharpness>2.4</sweepBandSharpness>
+        <sweepBandAngle>0.55</sweepBandAngle>
+        <sweepBandHexBoost>0.18</sweepBandHexBoost>
+        <sweepBandEdgeBoost>0.05</sweepBandEdgeBoost>
+        <sweepMinVisibility>0</sweepMinVisibility>
+        <hexScale>20</hexScale>
+        <hexLineAlpha>0.31</hexLineAlpha>
+        <hexFillAlpha>0.006</hexFillAlpha>
+        <hexBreathAlpha>0.026</hexBreathAlpha>
+        <hexPulseStrength>1.18</hexPulseStrength>
+        <hexLineWidth>0.016</hexLineWidth>
+        <hexSweepBoost>0.18</hexSweepBoost>
+        <hexHitBoost>1.85</hexHitBoost>
+        <idleSurfaceLowShieldFlickerAlpha>0.13</idleSurfaceLowShieldFlickerAlpha>
+        <impactCoreAlphaMultiplier>1.55</impactCoreAlphaMultiplier>
+        <impactAfterglowAlpha>0.75</impactAfterglowAlpha>
+        <impactRingAlphaMultiplier>1.05</impactRingAlphaMultiplier>
+        <idlePanelAlpha>0.025</idlePanelAlpha>
+        <idlePanelDensity>0.09</idlePanelDensity>
+        <impactPanelAlphaMultiplier>0.85</impactPanelAlphaMultiplier>
+        <impactArcAlphaMultiplier>0.55</impactArcAlphaMultiplier>
+        <impactSparkAlpha>0.55</impactSparkAlpha>
+        <impactSparkCount>8</impactSparkCount>
+        <impactSparkSpeed>1.0</impactSparkSpeed>
+        <impactSparkLength>0.22</impactSparkLength>
+        <impactSparkSpreadAngle>34</impactSparkSpreadAngle>
+        <impactSparkLifetimeFactor>0.28</impactSparkLifetimeFactor>
+        <fallbackHexAlpha>0.45</fallbackHexAlpha>
+        <noiseScale>18</noiseScale>
+        <noiseAlpha>0.035</noiseAlpha>
+        <noiseSpeed>0.003</noiseSpeed>
+        <noiseDistortion>0.014</noiseDistortion>
+        <lowShieldNoiseBoost>1.65</lowShieldNoiseBoost>
+        <edgeColor>(0.36,0.90,1.0,1.0)</edgeColor>
+        <sweepColor>(0.54,1.0,0.98,1.0)</sweepColor>
+        <impactColor>(0.90,1.0,0.98,1.0)</impactColor>
+        <hexColor>(0.02,0.82,0.95,1.0)</hexColor>
+        <hexFillColor>(0.10,0.13,0.14,1.0)</hexFillColor>
+        <hexEdgeAccentColor>(0.72,0.57,0.34,1.0)</hexEdgeAccentColor>
+        <hexEdgeAccentStrength>0.045</hexEdgeAccentStrength>
+        <maxHitUvRadius>0.14</maxHitUvRadius>
+        <shieldOverlayHeightOffset>0.16</shieldOverlayHeightOffset>
+        <devHighVisibilityMode>false</devHighVisibilityMode>
+        <devHighVisibilityMultiplier>2.25</devHighVisibilityMultiplier>
+        <snapHitToHullTextureAlpha>true</snapHitToHullTextureAlpha>
+        <hullAlphaMaskResolution>64</hullAlphaMaskResolution>
+        <hullAlphaThreshold>0.1</hullAlphaThreshold>
+        <hullAlphaLocalSearchRadius>6</hullAlphaLocalSearchRadius>
+        <hullAlphaMaxSearchRadius>18</hullAlphaMaxSearchRadius>
+        <hullSurfaceShieldOffset>0.04</hullSurfaceShieldOffset>
+        <maxImpactSurfaceVisualOffset>0.055</maxImpactSurfaceVisualOffset>
+        <horizontalImpactSurfaceOffsetScale>1.0</horizontalImpactSurfaceOffsetScale>
+        <verticalImpactSurfaceOffsetScale>0.60</verticalImpactSurfaceOffsetScale>
+        <verticalImpactInwardBiasWorld>2.0</verticalImpactInwardBiasWorld>
+        <verticalExtraInwardBiasWorld>0.5</verticalExtraInwardBiasWorld>
+        <verticalImpactInwardBiasThreshold>0.65</verticalImpactInwardBiasThreshold>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularShuttlePowerPlant">
+        <basePowerConsumption>0</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Comps.CompProperties_ModularShuttle">
+        <shipDef>CT_ModularShuttleTransportShip</shipDef>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <uiOrder>2600</uiOrder>
+  </ThingDef>
+</Defs>

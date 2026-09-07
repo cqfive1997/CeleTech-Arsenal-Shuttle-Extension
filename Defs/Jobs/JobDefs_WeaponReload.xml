@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>CT_Shuttle_ReloadShuttleWeapon</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Weapon.JobDriver_ReloadShuttleWeapon</driverClass>
+    <reportString>reloading shuttle weapon.</reportString>
+  </JobDef>
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleProfileTuningDef>
+    <defName>CT_DefaultShuttleProfileTuning</defName>
+    <label>default modular shuttle profile tuning</label>
+
+    <!-- These values preserve the pre-PR7 hardcoded profile and launch behavior. -->
+    <baseCargoRegionCount>0</baseCargoRegionCount>
+    <baseLaunchEnergyWd>25</baseLaunchEnergyWd>
+    <energyPerTileWd>1</energyPerTileWd>
+    <energyPerKgTileWd>0.01</energyPerKgTileWd>
+    <payloadLiftEnergyPerKgWd>0.05</payloadLiftEnergyPerKgWd>
+    <reserveEnergyFraction>0.15</reserveEnergyFraction>
+    <hardRangeCapTiles>186</hardRangeCapTiles>
+    <launchCooldownTicks>3750</launchCooldownTicks>
+    <baseHullHitPoints>3000</baseHullHitPoints>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleProfileTuningDef>
+</Defs>

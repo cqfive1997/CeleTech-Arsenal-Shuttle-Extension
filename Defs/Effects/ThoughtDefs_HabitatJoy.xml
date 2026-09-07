@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>CT_Shuttle_RecreationRoomEnjoyed</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>relaxed in Recreation Module I</label>
+        <description>I had time to relax in Recreation Module I.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>relaxed in Recreation Module II</label>
+        <description>I had time to relax in Recreation Module II.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>relaxed in Recreation Module III</label>
+        <description>I had time to relax in Recreation Module III.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>relaxed in Recreation Module IV</label>
+        <description>I had time to relax in Recreation Module IV.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

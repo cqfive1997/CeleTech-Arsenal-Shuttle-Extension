@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleStarterPresetDef>
+    <defName>CT_Shuttle_StarterPreset_BasicFlightCargo</defName>
+    <label>basic shuttle build</label>
+    <description>Builds the airframe, cockpit, onboard power, and cargo bay as one project with combined research, materials, and work.</description>
+    <steps>
+      <li>
+        <stepID>cockpit-segment</stepID>
+        <kind>Segment</kind>
+        <segmentSlotTypeID>cockpit</segmentSlotTypeID>
+        <targetDefName>CT_Shuttle_CockpitSegment</targetDefName>
+      </li>
+      <li>
+        <stepID>pilot-station</stepID>
+        <kind>Module</kind>
+        <segmentSlotTypeID>cockpit</segmentSlotTypeID>
+        <moduleSlotTypeID>cockpit</moduleSlotTypeID>
+        <targetDefName>CT_Shuttle_CockpitModule</targetDefName>
+      </li>
+      <li>
+        <stepID>power-segment</stepID>
+        <kind>Segment</kind>
+        <segmentSlotTypeID>power</segmentSlotTypeID>
+        <targetDefName>CT_Shuttle_PowerSegment</targetDefName>
+      </li>
+      <li>
+        <stepID>compact-reactor</stepID>
+        <kind>Module</kind>
+        <segmentSlotTypeID>power</segmentSlotTypeID>
+        <moduleSlotTypeID>reactor</moduleSlotTypeID>
+        <targetDefName>CT_Shuttle_CompactFissionReactorModule</targetDefName>
+      </li>
+      <li>
+        <stepID>composite-battery</stepID>
+        <kind>Module</kind>
+        <segmentSlotTypeID>power</segmentSlotTypeID>
+        <moduleSlotTypeID>battery</moduleSlotTypeID>
+        <targetDefName>CT_Shuttle_CompositeBatteryBankModule</targetDefName>
+      </li>
+      <li>
+        <stepID>cargo-segment</stepID>
+        <kind>Segment</kind>
+        <segmentSlotTypeID>cargo</segmentSlotTypeID>
+        <targetDefName>CT_Shuttle_CargoSegment</targetDefName>
+      </li>
+    </steps>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleStarterPresetDef>
+</Defs>

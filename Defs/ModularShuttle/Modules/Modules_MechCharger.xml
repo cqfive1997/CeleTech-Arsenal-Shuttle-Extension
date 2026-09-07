@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CT_Shuttle_MechCharger_I</defName>
+    <label>mech charging bay module I</label>
+    <description>A compact shuttle bay that can hold and recharge up to four colony mechanoids without producing toxic waste.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_MechLogisticsInterface</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>8000</constructionWorkTicks>
+    <moduleTypeID>mech-charger</moduleTypeID>
+    <mass>120</mass>
+    <idlePowerDrawWatts>320</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>support</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>mech-charger</li>
+    </installableModuleSlotTypes>
+    <mechChargeSlots>4</mechChargeSlots>
+    <chargeRateFactor>1.0</chargeRateFactor>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CT_Shuttle_MechCharger_II</defName>
+    <label>mech charging bay module II</label>
+    <description>An improved shuttle mech charging bay. It holds four colony mechanoids and recharges them faster without producing toxic waste.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_MechLogisticsInterface</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>220</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>8000</constructionWorkTicks>
+    <moduleTypeID>mech-charger</moduleTypeID>
+    <mass>180</mass>
+    <idlePowerDrawWatts>500</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>support</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>mech-charger</li>
+    </installableModuleSlotTypes>
+    <mechChargeSlots>4</mechChargeSlots>
+    <chargeRateFactor>1.25</chargeRateFactor>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CT_Shuttle_MechCharger_III</defName>
+    <label>mech charging bay module III</label>
+    <description>An advanced shuttle mech charging bay. It holds four colony mechanoids and recharges them efficiently without producing toxic waste.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_MechLogisticsInterface</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>300</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>8000</constructionWorkTicks>
+    <moduleTypeID>mech-charger</moduleTypeID>
+    <mass>260</mass>
+    <idlePowerDrawWatts>750</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>support</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>mech-charger</li>
+    </installableModuleSlotTypes>
+    <mechChargeSlots>4</mechChargeSlots>
+    <chargeRateFactor>1.5</chargeRateFactor>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CT_Shuttle_MechCharger_IV</defName>
+    <label>mech charging bay module IV</label>
+    <description>A high-end shuttle mech charging bay. It holds four colony mechanoids and recharges them at twice the standard charger speed without producing toxic waste.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_MechLogisticsInterface</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>420</Steel>
+      <Plasteel>160</Plasteel>
+      <ComponentIndustrial>14</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>8000</constructionWorkTicks>
+    <moduleTypeID>mech-charger</moduleTypeID>
+    <mass>380</mass>
+    <idlePowerDrawWatts>1100</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>support</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>mech-charger</li>
+    </installableModuleSlotTypes>
+    <mechChargeSlots>4</mechChargeSlots>
+    <chargeRateFactor>2.0</chargeRateFactor>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleMechChargerModuleDef>
+</Defs>

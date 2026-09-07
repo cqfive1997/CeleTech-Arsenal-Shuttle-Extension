@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>CT_ModularShuttleIncoming</defName>
+    <label>Kun Peng shuttle (incoming)</label>
+    <thingClass>CeleTech.ShuttleExtension.ModularShuttle.World.ModularShuttleIncoming</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/ModularShuttle/KunPeng/KunPengShuttleSkyfaller</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,9)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+    <size>(5,9)</size>
+    <skyfaller>
+      <anticipationSound>Shuttle_Landing</anticipationSound>
+      <anticipationSoundTicks>250</anticipationSoundTicks>
+      <ticksToImpactRange>230~260</ticksToImpactRange>
+      <movementType>Decelerate</movementType>
+      <minimalRoofDestruction>true</minimalRoofDestruction>
+      <shadowSize>(7,9)</shadowSize>
+      <rotationCurve>
+        <points>
+          <li>(0,30)</li>
+          <li>(0.5,5)</li>
+          <li>(0.9,-5)</li>
+          <li>(0.95,0)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0.0,3.2)</li>
+          <li>(0.78,3.0)</li>
+          <li>(0.92,2.4)</li>
+          <li>(0.975,0.7)</li>
+          <li>(1,0)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0.0,1.1)</li>
+          <li>(0.55,0.75)</li>
+          <li>(0.85,0.22)</li>
+          <li>(0.94,0.06)</li>
+          <li>(1.0,0.0)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>CT_ModularShuttleLeaving</defName>
+    <label>Kun Peng shuttle (leaving)</label>
+    <thingClass>CeleTech.ShuttleExtension.ModularShuttle.World.ModularShuttleLeaving</thingClass>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/ModularShuttle/KunPeng/KunPengShuttleSkyfaller</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,9)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+    <size>(5,9)</size>
+    <skyfaller>
+      <reversed>true</reversed>
+      <anticipationSound>Shuttle_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange>-40~-15</ticksToImpactRange>
+      <moteSpawnTime>0.05</moteSpawnTime>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(7,9)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+      <rotationCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(0.15,10)</li>
+          <li>(0.5,-5)</li>
+        </points>
+      </rotationCurve>
+      <zPositionCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(0.15,2)</li>
+          <li>(0.5,4.5)</li>
+          <li>(1,30)</li>
+        </points>
+      </zPositionCurve>
+      <speedCurve>
+        <points>
+          <li>(0.15,0.08)</li>
+          <li>(0.5,0.4)</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+</Defs>

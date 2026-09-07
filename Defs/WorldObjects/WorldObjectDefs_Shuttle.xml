@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorldObjectDef ParentName="ShuttleWorldObjectBase">
+    <defName>CT_ModularShuttleWorldObject</defName>
+    <label>Kun Peng shuttle</label>
+    <description>A modular shuttle in flight.</description>
+    <texture>World/WorldObjects/Expanding/ModularShuttle/KunPengWorldObject</texture>
+    <expandingIconTexture>World/WorldObjects/Expanding/ModularShuttle/KunPengWorldObject</expandingIconTexture>
+    <expandingIconDrawSize>1</expandingIconDrawSize>
+  </WorldObjectDef>
+
+  <WorldObjectDef ParentName="StaticWorldObjectBase">
+    <defName>CT_ModularShuttleTemporaryLandingSite</defName>
+    <label>shuttle landing site</label>
+    <description>A temporary landing site opened for choosing a modular shuttle landing zone.</description>
+    <worldObjectClass>CeleTech.ShuttleExtension.ModularShuttle.World.ModularShuttleTemporaryLandingSite</worldObjectClass>
+    <texture>World/WorldObjects/Camp</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Camp</expandingIconTexture>
+    <expandingIconPriority>80</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <canHaveMap>true</canHaveMap>
+    <canHaveFaction>true</canHaveFaction>
+    <isTempIncidentMapOwner>true</isTempIncidentMapOwner>
+    <validLaunchTarget>true</validLaunchTarget>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+    </comps>
+  </WorldObjectDef>
+</Defs>

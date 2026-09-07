@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>CMC_ShuttleCondensationPuff</defName>
+    <graphicData>
+      <texPath>Things/Fleck/CMC_ShuttleCondensationPuff</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>Skyfaller</altitudeLayer>
+    <altitudeLayerIncOffset>8</altitudeLayerIncOffset>
+    <fadeInTime>0.035</fadeInTime>
+    <solidTime>0.48</solidTime>
+    <fadeOutTime>1.55</fadeOutTime>
+    <growthRate>0.002</growthRate>
+  </FleckDef>
+</Defs>

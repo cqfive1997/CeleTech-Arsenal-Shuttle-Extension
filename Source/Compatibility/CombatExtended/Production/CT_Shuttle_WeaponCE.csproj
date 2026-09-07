@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E52A663-CC12-4639-9326-90073730D855}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CeleTech.ShuttleExtension.Compatibility.CombatExtended</RootNamespace>
+    <AssemblyName>CeleTech_Shuttle_CombatExtended</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <RimWorldDir Condition=" '$(RimWorldDir)' == '' ">$(MSBuildProjectDirectory)\..\..\..\..\..\..</RimWorldDir>
+    <SteamAppsDir Condition=" '$(SteamAppsDir)' == '' ">$(RimWorldDir)\..\..</SteamAppsDir>
+    <CombatExtendedDir Condition=" '$(CombatExtendedDir)' == '' ">$(SteamAppsDir)\workshop\content\294100\2890901044</CombatExtendedDir>
+    <ShuttleModDir Condition=" '$(ShuttleModDir)' == '' ">$(MSBuildProjectDirectory)\..\..\..\..</ShuttleModDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(ShuttleModDir)\1.6\CombatExtended\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(ShuttleModDir)\1.6\CombatExtended\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CombatExtended">
+      <HintPath>$(CombatExtendedDir)\Assemblies\CombatExtended.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CeleTech_Shuttle">
+      <HintPath>$(ShuttleModDir)\Assemblies\CeleTech_Shuttle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CeWeaponAmmoOwnerAdapter.cs" />
+    <Compile Include="CeWeaponBackendBootstrap.cs" />
+    <Compile Include="CeProjectileThreatAdapter.cs" />
+    <Compile Include="CeShuttlePointDefenseBullet.cs" />
+    <Compile Include="CeWeaponBackendAuthorityReportWriter.cs" />
+    <Compile Include="CeWeaponBackendDebugActions.cs" />
+    <Compile Include="CeWeaponBackendFactory.cs" />
+    <Compile Include="CeWeaponBackendForcedTargetEvaluator.cs" />
+    <Compile Include="CeWeaponBackendLifecycleDriver.cs" />
+    <Compile Include="CeWeaponBackendPowerDemandDriver.cs" />
+    <Compile Include="CeWeaponBackendTickDriver.cs" />
+    <Compile Include="CeWeaponAmmoCommandDriver.cs" />
+    <Compile Include="CeWeaponAmmoReadDriver.cs" />
+    <Compile Include="CeWeaponCompatibilitySpec.cs" />
+    <Compile Include="CeWeaponCompatibilityEvaluator.cs" />
+    <Compile Include="CeWeaponCargoReloadTransaction.cs" />
+    <Compile Include="CeWeaponCycleDriver.cs" />
+    <Compile Include="CeWeaponFiringComposition.cs" />
+    <Compile Include="CeWeaponFiringPowerProjection.cs" />
+    <Compile Include="CeWeaponMagazineAccessor.cs" />
+    <Compile Include="CeWeaponMagazineAuthorityTransfer.cs" />
+    <Compile Include="CeWeaponMagazineAuthorityTransferProbe.cs" />
+    <Compile Include="CeWeaponMagazineAuthorityTransferProbeReport.cs" />
+    <Compile Include="CeWeaponMagazineMigrationPreflight.cs" />
+    <Compile Include="CeWeaponMagazineMigrationReport.cs" />
+    <Compile Include="CeWeaponManualReloadDriver.cs" />
+    <Compile Include="CeWeaponMuzzleVerb.cs" />
+    <Compile Include="CeWeaponMuzzleVerbInstaller.cs" />
+    <Compile Include="CeWeaponPreparedMagazineTransfer.cs" />
+    <Compile Include="CeWeaponProductionBurstProbe.cs" />
+    <Compile Include="CeWeaponProductionBurstProbeGameComponent.cs" />
+    <Compile Include="CeWeaponProductionBurstProbeReport.cs" />
+    <Compile Include="CeWeaponProductionBurstProbeSession.cs" />
+    <Compile Include="CeWeaponProductionCycleDebugActions.cs" />
+    <Compile Include="CeWeaponProductionCycleProbe.cs" />
+    <Compile Include="CeWeaponProductionCycleProbeGameComponent.cs" />
+    <Compile Include="CeWeaponProductionCycleProbePowerSink.cs" />
+    <Compile Include="CeWeaponProductionCycleProbeReport.cs" />
+    <Compile Include="CeWeaponProductionCycleProbeSession.cs" />
+    <Compile Include="CeWeaponProductionShotDebugActions.cs" />
+    <Compile Include="CeWeaponProductionShotProbe.cs" />
+    <Compile Include="CeWeaponProductionShotProbeReport.cs" />
+    <Compile Include="CeWeaponRuntimeGunAccess.cs" />
+    <Compile Include="CeWeaponRuntimeGunFactory.cs" />
+    <Compile Include="CeWeaponRemovalRefundGuard.cs" />
+    <Compile Include="CeWeaponReloadDriver.cs" />
+    <Compile Include="CeWeaponShotFailureTrace.cs" />
+    <Compile Include="CeWeaponShotLifecycle.cs" />
+    <Compile Include="CeWeaponVerbTrackerDriver.cs" />
+  </ItemGroup>
+  <Target Name="ValidateProductionReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll')" Text="RimWorldDir does not point to a RimWorld installation: $(RimWorldDir)" />
+    <Error Condition="!Exists('$(CombatExtendedDir)\Assemblies\CombatExtended.dll')" Text="CombatExtendedDir does not point to an installed Combat Extended build: $(CombatExtendedDir)" />
+    <Error Condition="!Exists('$(ShuttleModDir)\Assemblies\CeleTech_Shuttle.dll')" Text="Build the main shuttle assembly before the CE production assembly." />
+  </Target>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

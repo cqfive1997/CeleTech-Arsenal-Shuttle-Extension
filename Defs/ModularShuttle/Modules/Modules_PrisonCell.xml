@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttlePrisonCellModuleDef>
+    <defName>CT_Shuttle_PrisonCell_Basic</defName>
+    <label>shuttle prison cell</label>
+    <description>A secured shuttle holding cell for transporting prisoners. This module only provides prison-cell capacity; prisoner handling and warden interactions require later systems.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_PrisonerContainment</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>260</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </constructionCostList>
+    <constructionWorkTicks>6000</constructionWorkTicks>
+    <moduleTypeID>prison-cell</moduleTypeID>
+    <playerInstallable>true</playerInstallable>
+    <mass>180</mass>
+    <idlePowerDrawWatts>250</idlePowerDrawWatts>
+    <moduleComplexityCost>1</moduleComplexityCost>
+    <installableSegmentTypes>
+      <li>living</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>prison-cell</li>
+    </installableModuleSlotTypes>
+    <prisonerSlots>8</prisonerSlots>
+    <security>1</security>
+    <comfort>0.25</comfort>
+    <supportsFeeding>true</supportsFeeding>
+    <supportsTending>true</supportsTending>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttlePrisonCellModuleDef>
+</Defs>

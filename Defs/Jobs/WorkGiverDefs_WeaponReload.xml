@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>CT_Shuttle_ReloadShuttleWeapon</defName>
+    <label>reload shuttle weapon</label>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.AI.Weapon.WorkGiver_ReloadShuttleWeapon</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>80</priorityInType>
+    <verb>reload</verb>
+    <gerund>reloading</gerund>
+  </WorkGiverDef>
+</Defs>

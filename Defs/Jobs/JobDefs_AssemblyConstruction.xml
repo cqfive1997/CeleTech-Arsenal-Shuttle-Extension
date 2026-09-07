@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>CT_Shuttle_FillAssemblyConstructionMaterial</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.Runtime.AssemblyConstruction.JobDriver_FillShuttleAssemblyConstructionMaterial</driverClass>
+    <reportString>正在向穿梭机填装建造材料。</reportString>
+  </JobDef>
+  <JobDef>
+    <defName>CT_Shuttle_ConstructAssemblyOrder</defName>
+    <driverClass>CeleTech.ShuttleExtension.ModularShuttle.Runtime.AssemblyConstruction.JobDriver_ConstructShuttleAssemblyOrder</driverClass>
+    <reportString>正在组装穿梭机构件。</reportString>
+  </JobDef>
+</Defs>

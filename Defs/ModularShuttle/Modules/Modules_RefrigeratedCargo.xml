@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleRefrigeratedCargoModuleDef>
+    <defName>CT_Shuttle_RefrigeratedCargoModule</defName>
+    <label>refrigerated cargo module</label>
+    <description>Provides refrigerated storage and accepts cold-sensitive cargo according to its filter. Cooling requires shuttle power; automatic routing on load requires a cargo logistics core.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_ColdChainCargo</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>180</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>7000</constructionWorkTicks>
+    <moduleTypeID>cargo</moduleTypeID>
+    <mass>80</mass>
+    <idlePowerDrawWatts>400</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>cargo</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>cargo</li>
+    </installableModuleSlotTypes>
+    <targetTemperatureC>-10</targetTemperatureC>
+    <coldCargoMassCapacityKg>600</coldCargoMassCapacityKg>
+    <requirePoweredCooling>true</requirePoweredCooling>
+    <blockLaunchIfColdCargoCannotBeTransferred>true</blockLaunchIfColdCargoCannotBeTransferred>
+    <blockRemovalWhenColdCargoNotEmpty>true</blockRemovalWhenColdCargoNotEmpty>
+    <autoTransferEnabledByDefault>true</autoTransferEnabledByDefault>
+    <autoTransferIntervalTicks>600</autoTransferIntervalTicks>
+    <maxStacksMovedPerInterval>1</maxStacksMovedPerInterval>
+    <autoTransferOnlyWhenCoolingActive>true</autoTransferOnlyWhenCoolingActive>
+    <requiresCargoLogisticsForAutoTransfer>true</requiresCargoLogisticsForAutoTransfer>
+    <autoTransferRottableItems>true</autoTransferRottableItems>
+    <allowCorpses>false</allowCorpses>
+    <allowPartialStackTransfer>false</allowPartialStackTransfer>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleRefrigeratedCargoModuleDef>
+</Defs>

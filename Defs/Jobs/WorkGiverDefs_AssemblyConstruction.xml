@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>CT_Shuttle_FillAssemblyConstructionMaterial</defName>
+    <label>填装穿梭机构件</label>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.Runtime.AssemblyConstruction.WorkGiver_FillShuttleAssemblyConstructionMaterial</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>80</priorityInType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+  </WorkGiverDef>
+  <WorkGiverDef>
+    <defName>CT_Shuttle_ConstructAssemblyOrder</defName>
+    <label>组装穿梭机构件</label>
+    <giverClass>CeleTech.ShuttleExtension.ModularShuttle.Runtime.AssemblyConstruction.WorkGiver_ConstructShuttleAssemblyOrder</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>80</priorityInType>
+    <verb>construct</verb>
+    <gerund>constructing</gerund>
+  </WorkGiverDef>
+</Defs>

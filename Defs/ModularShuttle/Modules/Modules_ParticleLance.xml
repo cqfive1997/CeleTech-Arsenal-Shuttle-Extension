@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>CT_Mote_ShuttleParticleLanceBeam</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>true</needsMaintenance>
+      <rotateTowardsTarget>true</rotateTowardsTarget>
+      <scaleToConnectTargets>true</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/GraserBeam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>CT_Shuttle_Weapon_HPJ_L01Emitter</defName>
+    <label>HPJ-L01 shuttle particle lance emitter</label>
+    <description>A shuttle-mounted reconstruction of the HPJ-L01 sustained particle-lance emitter.</description>
+    <graphicData>
+      <texPath>Icon/Module/Weapon/ParticleLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>CeleTech.ShuttleExtension.Compatibility.CelestialArsenal.Verb_ShuttleCelestialSustainLaser, CeleTech_Shuttle_ParticleLance</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>0</warmupTime>
+        <range>28.9</range>
+        <burstShotCount>360</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CeleTech.ShuttleExtension.Compatibility.CelestialArsenal.CompProperties_ShuttleSustainLaserData, CeleTech_Shuttle_ParticleLance">
+        <LaserLine_MoteDef>CT_Mote_ShuttleParticleLanceBeam</LaserLine_MoteDef>
+        <LaserLine_MoteDef_Core>CT_Mote_ShuttleParticleLanceBeam</LaserLine_MoteDef_Core>
+        <ImpactFleck>Fleck_BeamSpark</ImpactFleck>
+        <ImpactFleckScale>3</ImpactFleckScale>
+        <ImpactFleckChancePerDamagePulse>0.4</ImpactFleckChancePerDamagePulse>
+        <SoundDef>OrbitalBeamSubtle</SoundDef>
+        <Color_Red>70</Color_Red>
+        <Color_Green>220</Color_Green>
+        <Color_Blue>255</Color_Blue>
+        <Color_Alpha>1</Color_Alpha>
+        <DamageDef>Beam</DamageDef>
+        <DamageNum>6</DamageNum>
+        <DamageArmorPenetration>1.2</DamageArmorPenetration>
+        <DefaultRetargetRadius>20</DefaultRetargetRadius>
+        <DefaultRetargetTransitionShots>6</DefaultRetargetTransitionShots>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponModuleDef>
+    <defName>CT_Shuttle_Module_CelestialParticleLance</defName>
+    <label>HPJ-L01 particle lance module</label>
+    <description>Our engineers mounted CeleTech Arsenal's HPJ-L01 particle lance on the shuttle. Its emitter draws only 2 kW while enabled and needs no ammunition, putting ammo anxiety to rest.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_WeaponBayIntegration</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>500</Steel>
+      <Plasteel>180</Plasteel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>9000</constructionWorkTicks>
+    <moduleTypeID>weapon</moduleTypeID>
+    <mass>240</mass>
+    <idlePowerDrawWatts>2000</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>weapon</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>weapon</li>
+    </installableModuleSlotTypes>
+    <weaponRole>DirectFire</weaponRole>
+    <weaponDef>CT_Shuttle_Weapon_HPJ_L01Emitter</weaponDef>
+    <mountCount>1</mountCount>
+    <muzzleCellOffsets>
+      <li>(0,0,1)</li>
+    </muzzleCellOffsets>
+    <firingPowerDrawWatts>0</firingPowerDrawWatts>
+    <scanIntervalTicks>5</scanIntervalTicks>
+    <warmupTicks>2</warmupTicks>
+    <cooldownTicks>112</cooldownTicks>
+    <canAutoFire>true</canAutoFire>
+    <canAutoFireWithoutFireControl>true</canAutoFireWithoutFireControl>
+    <fallbackAutoFireRange>28.9</fallbackAutoFireRange>
+    <canSetForcedTarget>true</canSetForcedTarget>
+    <requiresScanner>false</requiresScanner>
+    <requiresNavigationComputer>false</requiresNavigationComputer>
+    <maxAmmo>0</maxAmmo>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleWeaponModuleDef>
+
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>CT_Shuttle_Module_CelestialParticleLance</defName>
+    <texPath>Icon/Module/Weapon/ParticleLance</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+    <defName>module_weapon_particle_lance</defName>
+    <texPath>Icon/Module/Weapon/ParticleLance</texPath>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleControlIconDef>
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef>
+    <defName>CT_Shuttle_DBH_HygieneSuiteModule</defName>
+    <label>shuttle hygiene module</label>
+    <description>Provides compact shower, toilet, water tank, and septic integration hardware for shuttle occupants when Dubs Bad Hygiene is active. Designed for installation in living bays.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_Research_DBH_HygieneSuite</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>120</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>5200</constructionWorkTicks>
+    <moduleTypeID>habitat</moduleTypeID>
+    <mass>80</mass>
+    <idlePowerDrawWatts>80</idlePowerDrawWatts>
+    <moduleComplexityCost>1</moduleComplexityCost>
+    <installableSegmentTypes>
+      <li>living</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>habitat</li>
+    </installableModuleSlotTypes>
+    <habitatSleepSlots>0</habitatSleepSlots>
+    <habitatDiningSlots>0</habitatDiningSlots>
+    <habitatSupportsSleep>false</habitatSupportsSleep>
+    <habitatSupportsDining>false</habitatSupportsDining>
+    <allowCargoFoodWithdrawal>false</allowCargoFoodWithdrawal>
+    <modExtensions>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Extensions.ShuttleRuntimeSystemDefExtension">
+        <runtimeSystemKey>celetech.shuttle.extension.integrations/dbh-hygiene-suite-runtime</runtimeSystemKey>
+      </li>
+      <li Class="CeleTech.ShuttleExtension.AdditionalModule.Compatibility.DubsBadHygiene.DBHHygieneSuiteModuleExtension">
+        <integrationDefName>CT_Shuttle_DBHIntegration</integrationDefName>
+      </li>
+    </modExtensions>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleHabitatModuleDef>
+</Defs>

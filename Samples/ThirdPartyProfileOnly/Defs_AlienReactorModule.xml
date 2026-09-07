@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+    <defName>MyCoolMod_AlienReactorProfileModule</defName>
+    <label>alien reactor profile module</label>
+    <description>Sample third-party shuttle module that contributes static profile values through a registered contributor.</description>
+    <moduleTypeID>battery</moduleTypeID>
+    <mass>120</mass>
+    <idlePowerDrawWatts>25</idlePowerDrawWatts>
+    <installableSegmentTypes>
+      <li>power</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>battery</li>
+    </installableModuleSlotTypes>
+    <modExtensions>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Extensions.ShuttleProfileContributorDefExtension">
+        <contributorKey>my.cool.mod/alien-reactor-profile</contributorKey>
+      </li>
+    </modExtensions>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleBatteryModuleDef>
+</Defs>

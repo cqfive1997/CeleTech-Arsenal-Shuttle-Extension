@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"][workMode="Work"]/subNodes/li[@Class="JobGiver_GetEnergy_Charger"]</xpath>
+    <match Class="PatchOperationInsert">
+      <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"][workMode="Work"]/subNodes/li[@Class="JobGiver_GetEnergy_Charger"]</xpath>
+      <order>Append</order>
+      <value>
+        <li Class="CeleTech.ShuttleExtension.ModularShuttle.AI.MechCharging.JobGiver_GetEnergy_ShuttleMechCharger" MayRequire="Ludeon.RimWorld.Biotech" />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"][workMode="Recharge"]/subNodes/li[@Class="JobGiver_GetEnergy_Charger"]</xpath>
+    <match Class="PatchOperationInsert">
+      <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"][workMode="Recharge"]/subNodes/li[@Class="JobGiver_GetEnergy_Charger"]</xpath>
+      <order>Append</order>
+      <value>
+        <li Class="CeleTech.ShuttleExtension.ModularShuttle.AI.MechCharging.JobGiver_GetEnergy_ShuttleMechCharger" MayRequire="Ludeon.RimWorld.Biotech" />
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

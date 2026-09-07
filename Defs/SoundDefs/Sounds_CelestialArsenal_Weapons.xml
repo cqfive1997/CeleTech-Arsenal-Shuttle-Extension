@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SoundDef>
+    <defName>CT_CA_Weapon_6mmPD_Shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CelestialArsenal/Weapons/C_SteamSpinnakerFire</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>1</min>
+          <max>1.112391</max>
+        </pitchRange>
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>
+                    <y>21001.8</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>24.77761</x>
+                    <y>12701.95</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>32.786</x>
+                    <y>7168.717</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>45.91975</x>
+                    <y>4270.358</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>66.10088</x>
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>CT_CA_Weapon_40mmCIWS_Shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CelestialArsenal/Weapons/cannon_40mmshot</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>2</min>
+          <max>2.112391</max>
+        </pitchRange>
+        <volumeRange>
+          <min>300.8</min>
+          <max>350.9</max>
+        </volumeRange>
+        <distRange>0~25</distRange>
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>0</x>
+                    <y>18000</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>15</x>
+                    <y>12000</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>25</x>
+                    <y>6000</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_Volume" />
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>0</x>
+                    <y>1.0</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>25</x>
+                    <y>0.3</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>18000</cutoffFrequency>
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CelestialArsenal/Weapons/cannon_40mmShotLow</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>1.4</min>
+          <max>1.6</max>
+        </pitchRange>
+        <volumeRange>
+          <min>329.7</min>
+          <max>330.8</max>
+        </volumeRange>
+        <distRange>15~70</distRange>
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>15</x>
+                    <y>8000</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>40</x>
+                    <y>4000</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>70</x>
+                    <y>2000</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />
+            <outParam Class="SoundParamTarget_Volume" />
+            <paramUpdateMode>Constant</paramUpdateMode>
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>15</x>
+                    <y>0.7</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>40</x>
+                    <y>0.4</y>
+                  </loc>
+                </li>
+                <li>
+                  <loc>
+                    <x>70</x>
+                    <y>0.1</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>8000</cutoffFrequency>
+            <lowpassResonaceQ>1.2</lowpassResonaceQ>
+          </li>
+        </filters>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

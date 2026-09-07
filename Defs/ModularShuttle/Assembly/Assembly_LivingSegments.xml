@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleLivingSegmentDef>
+    <defName>CT_Shuttle_LivingSegment</defName>
+    <label>Living Bay</label>
+    <description>An optional shuttle living section for habitat, recreation, medical, prison, and mech support modules.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_HabitatSupport</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>320</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </constructionCostList>
+    <constructionWorkTicks>10000</constructionWorkTicks>
+    <segmentTypeID>living</segmentTypeID>
+    <mass>32</mass>
+    <installableSegmentSlotTypes>
+      <li>living</li>
+    </installableSegmentSlotTypes>
+    <installableModuleTypes>
+      <li>habitat</li>
+      <li>medical-bay</li>
+      <li>prison-cell</li>
+    </installableModuleTypes>
+    <moduleSlots>
+      <li>
+        <slotTypeID>optional</slotTypeID>
+      </li>
+      <li>
+        <slotTypeID>optional</slotTypeID>
+      </li>
+      <li>
+        <slotTypeID>optional</slotTypeID>
+      </li>
+      <li>
+        <slotTypeID>optional</slotTypeID>
+      </li>
+      <li>
+        <slotTypeID>optional</slotTypeID>
+      </li>
+      <li>
+        <slotTypeID>optional</slotTypeID>
+      </li>
+    </moduleSlots>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleLivingSegmentDef>
+</Defs>

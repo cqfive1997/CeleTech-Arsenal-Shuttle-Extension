@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleFireControlRadarModuleDef>
+    <defName>CT_Shuttle_FireControlRadar_Basic</defName>
+    <label>fire-control radar</label>
+    <description>Provides a fire-control radar network for shuttle weapon modules, enabling automatic fire-control connection and point-defense targeting.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_FireControlRadarNetwork</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>120</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>3000</constructionWorkTicks>
+    <moduleTypeID>fire-control</moduleTypeID>
+    <playerInstallable>true</playerInstallable>
+    <mass>40</mass>
+    <idlePowerDrawWatts>350</idlePowerDrawWatts>
+    <moduleComplexityCost>1</moduleComplexityCost>
+    <installableSegmentTypes>
+      <li>weapon</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>fire-control</li>
+    </installableModuleSlotTypes>
+    <supportsAutoDefense>true</supportsAutoDefense>
+    <supportsPointDefense>true</supportsPointDefense>
+    <pointDefenseRadius>45</pointDefenseRadius>
+    <directFireAccuracyMultiplier>1.35</directFireAccuracyMultiplier>
+    <directFireAccuracyBonus>0.12</directFireAccuracyBonus>
+    <directFireAccuracyFloor>0.97</directFireAccuracyFloor>
+    <forcedMissRadiusMultiplier>0.25</forcedMissRadiusMultiplier>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleFireControlRadarModuleDef>
+</Defs>

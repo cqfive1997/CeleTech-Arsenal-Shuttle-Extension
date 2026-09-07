@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>CT_Shuttle_Projectile_6mmPD</defName>
+    <label>6mm point-defense round</label>
+    <thingClass>CeleTech.ShuttleExtension.ModularShuttle.Weapons.Projectile_ShuttlePointDefenseRound</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.95</armorPenetrationBase>
+      <stoppingPower>0.45</stoppingPower>
+      <speed>106</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttlePointDefenseProjectileExtension">
+        <interceptionChance>0.12</interceptionChance>
+        <interceptionRadius>1.25</interceptionRadius>
+        <impactFleck>ShotFlash</impactFleck>
+        <impactFleckScale>0.65</impactFleckScale>
+        <homingAcceleration>0.18</homingAcceleration>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>CT_Shuttle_Projectile_40mmCIWS</defName>
+    <label>40mm CIWS round</label>
+    <thingClass>CeleTech.ShuttleExtension.ModularShuttle.Weapons.Projectile_ShuttlePointDefenseRound</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>54</damageAmountBase>
+      <armorPenetrationBase>1.35</armorPenetrationBase>
+      <stoppingPower>1.20</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttlePointDefenseProjectileExtension">
+        <interceptionChance>0.20</interceptionChance>
+        <interceptionRadius>1.75</interceptionRadius>
+        <impactFleck>ShotFlash</impactFleck>
+        <impactFleckScale>1</impactFleckScale>
+        <homingAcceleration>0.14</homingAcceleration>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

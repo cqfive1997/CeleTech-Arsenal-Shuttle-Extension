@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleSupportModuleDef>
+    <defName>CT_Shuttle_Module_AmmoLoader_I</defName>
+    <label>ammo loader</label>
+    <description>An automated shuttle weapon ammunition loader. It provides the hardware actuator for automatic reload requests, but still consumes ordinary shuttle cargo ammunition.</description>
+    <researchPrerequisites>
+      <li>CT_Shuttle_AutomaticAmmoLoading</li>
+    </researchPrerequisites>
+    <constructionCostList>
+      <Steel>180</Steel>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </constructionCostList>
+    <constructionWorkTicks>5200</constructionWorkTicks>
+    <moduleTypeID>ammo-loader</moduleTypeID>
+    <playerInstallable>true</playerInstallable>
+    <mass>45</mass>
+    <idlePowerDrawWatts>240</idlePowerDrawWatts>
+    <moduleComplexityCost>1</moduleComplexityCost>
+    <installableSegmentTypes>
+      <li>weapon</li>
+    </installableSegmentTypes>
+    <installableModuleSlotTypes>
+      <li>ammo-loader</li>
+    </installableModuleSlotTypes>
+  </CeleTech.ShuttleExtension.ModularShuttle.Defs.ShuttleSupportModuleDef>
+</Defs>
