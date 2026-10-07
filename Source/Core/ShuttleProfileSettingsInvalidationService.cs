@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace CeleTech.ShuttleExtension.ModularShuttle.Core
@@ -19,24 +20,28 @@ namespace CeleTech.ShuttleExtension.ModularShuttle.Core
             MarkController(currentController, reason, markedControllers);
 
             List<Map> maps = Find.Maps;
-            for (int mapIndex = 0; maps != null && mapIndex < maps.Count; mapIndex++)
+
+            if (maps == null)
             {
-                Map map = maps[mapIndex];
-                List<Thing> buildings = map != null && map.listerThings != null
-                    ? map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial)
-                    : null;
-                for (int thingIndex = 0;
-                    buildings != null && thingIndex < buildings.Count;
-                    thingIndex++)
+                return;
+            }
+
+            for (int mapIndex = 0; mapIndex < maps.Count; mapIndex++)
+            {
+                var listerThings = maps[mapIndex]?.listerThings;
+
+                if (listerThings == null)
                 {
-                    ThingWithComps host = buildings[thingIndex] as ThingWithComps;
-                    CompModularShuttleCore core = host != null
-                        ? host.TryGetComp<CompModularShuttleCore>()
-                        : null;
-                    MarkController(
-                        core != null ? core.Controller : null,
-                        reason,
-                        markedControllers);
+                    continue;
+                }
+
+                var hosts = CompModularShuttleCore.GetOwnerThingDefs().Where(thingDef => thingDef.IsBuildingArtificial).SelectMany(listerThings.ThingsOfDef);
+
+                foreach (var building in hosts)
+                {
+                    ThingWithComps host = building as ThingWithComps;
+                    CompModularShuttleCore core = host?.TryGetComp<CompModularShuttleCore>();
+                    MarkController(core?.Controller, reason, markedControllers);
                 }
             }
         }

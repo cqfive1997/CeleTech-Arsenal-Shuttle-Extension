@@ -14,6 +14,7 @@ using CeleTech.ShuttleExtension.ModularShuttle.UI;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using System.Linq;
 
 namespace CeleTech.ShuttleExtension.ModularShuttle.Core
 {
@@ -58,6 +59,18 @@ namespace CeleTech.ShuttleExtension.ModularShuttle.Core
         private string pendingControlPanelSystemUpdateVersion;
         private List<string> pendingSystemUpdateStepKeys;
         private bool forceControlPanelSystemUpdateScheduleForDev;
+
+        static ThingDef[] ownerThingDefs = null;
+
+        public static ThingDef[] GetOwnerThingDefs()
+        {
+            if (ownerThingDefs == null)
+            {
+                ownerThingDefs = DefDatabase<ThingDef>.AllDefs.Where(thingDef => thingDef.comps?.Any(comp => comp.compClass == typeof(CompModularShuttleCore)) ?? false).ToArray();
+            }
+
+            return ownerThingDefs;
+        }
 
         internal ShuttleController Controller
         {

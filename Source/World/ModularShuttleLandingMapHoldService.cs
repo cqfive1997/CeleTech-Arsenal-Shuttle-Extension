@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using CeleTech.ShuttleExtension.ModularShuttle.Core;
 using RimWorld.Planet;
 using Verse;
 
@@ -62,25 +64,14 @@ namespace CeleTech.ShuttleExtension.ModularShuttle.World
 
         internal static bool ContainsSpawnedModularShuttle(Map map)
         {
-            if (map == null || map.listerThings == null)
+            var listerThings = map?.listerThings;
+
+            if (listerThings == null)
             {
                 return false;
             }
 
-            List<Thing> things = map.listerThings.AllThings;
-            for (int i = 0; i < things.Count; i++)
-            {
-                Thing thing = things[i];
-                if (thing != null &&
-                    !thing.Destroyed &&
-                    thing.Spawned &&
-                    ModularShuttleVisitSiteArrivalUtility.IsModularShuttle(thing))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return CompModularShuttleCore.GetOwnerThingDefs().Any(thingDef => listerThings.ThingsOfDef(thingDef).Any(thing => thing.Spawned));
         }
 
         internal static bool ShouldCloseGeneratedSelectionMap(
